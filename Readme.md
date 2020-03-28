@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Евгений Евгений](https://up.htmlacademy.ru/adaptive/19/user/139413).
-* Наставник: `Неизвестно`.
+- Студент: [Евгений Евгений](https://up.htmlacademy.ru/adaptive/19/user/139413).
+- Наставник: `Сам себе наставник (повторно прохожу интенсив)`.
 
 ---
 
