@@ -1,0 +1,29 @@
+@import "logo";
+@import "copyright";
+
+$footer-border-bottom: 1px solid #d9d9d9;
+
+.page-footer {
+  background-color: #f2f2f2;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+}
+
+.page-footer__logo {
+  margin: 0;
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 31px;
+  border-bottom: $footer-border-bottom;
+}
+
+.page-footer__social {
+  padding-top: 23px;
+  padding-bottom: 21px;
+  border-bottom: $footer-border-bottom;
+}
+
+.page-footer__copyright {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}

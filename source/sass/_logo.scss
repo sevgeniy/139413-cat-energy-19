@@ -1,0 +1,14 @@
+@import "base";
+
+.cat-energy-logo {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $header-color;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.cat-energy-logo__cat {
+  font-weight: bold;
+}

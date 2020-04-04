@@ -1,0 +1,34 @@
+@import "base";
+
+.contacts {
+  line-height: 20px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+  padding-bottom: 26px;
+}
+
+.contacts__title {
+  max-width: 125px;
+  margin: 0;
+  font-family: $header-font-family;
+  font-size: 16px;
+  font-weight: normal;
+  color: $header-color;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  max-width: 140px;
+  margin: 0;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 362px;
+}
