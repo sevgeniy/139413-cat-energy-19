@@ -1,0 +1,13 @@
+@import "base";
+
+.page-main__title {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+  font-family: $header-font-family;
+  font-size: 36px;
+  line-height: 60px;
+  color: $header-color;
+}
