@@ -1,16 +1,12 @@
-@import "base";
-@import "text-input";
-
 .form {
   padding-left: $side-padding;
   padding-right: $side-padding;
 }
 
 .form__title {
-  font-family: $header-font-family;
+  margin-bottom: 39px;
   font-size: 14px;
   line-height: 18px;
-  color: $header-color;
   text-transform: uppercase;
 }
 
@@ -44,11 +40,10 @@
 }
 
 .form__fieldset-legend {
+  max-width: 200px;
   margin-bottom: 30px;
-  font-family: $header-font-family;
   font-size: 20px;
   line-height: 20px;
-  color: $header-color;
 }
 
 .form__comments {

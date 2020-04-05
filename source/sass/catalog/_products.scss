@@ -1,7 +1,6 @@
-@import "base";
-
 .products {
-  padding-top: 31px;
+  border-left: $border;
+  border-right: $border;
 }
 
 .products__list {

@@ -1,15 +1,23 @@
+@import "base";
+// blocks
+@import "blocks/header";
+@import "blocks/text-input";
+// page blocks
+@import "contacts";
+@import "footer";
+@import "social";
+@import "page-header";
+@import "site-list";
+@import "page-main";
+// index page
 @import "index/slogan";
 @import "index/categories";
 @import "index/category";
 @import "index/advantages";
 @import "index/example";
-@import "contacts";
-@import "footer";
-@import "social";
-@import "header";
-@import "site-list";
+// catalog page
 @import "catalog/products";
 @import "catalog/product";
 @import "catalog/extra";
-@import "page-main";
+// form page
 @import "form/form";
