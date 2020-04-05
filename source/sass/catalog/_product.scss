@@ -1,0 +1,52 @@
+@import "base";
+
+.product {
+  margin: 0;
+  padding: 0;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+  padding-bottom: 24px;
+  border-bottom: $border;
+
+  &:first-child {
+    border-top: $border;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.product__title {
+  max-width: 75px;
+  font-family: $header-font-family;
+  font-size: 16px;
+  line-height: 20px;
+  color: $header-color;
+  text-transform: uppercase;
+}
+
+.product__description {
+  flex-grow: 1;
+}
+
+.product__info {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__property {
+  text-align: left;
+}
+
+.product__value {
+  text-align: right;
+}
+
+.product__value--price {
+  text-transform: uppercase;
+}

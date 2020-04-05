@@ -13,6 +13,8 @@ $color: #444444;
 $header-font-family: "Oswald", Arial, sans-sefif; // probably should rename variable, because this font-family is used also for links
 $header-color: #111111;
 
+$border: 1px solid #ededed;
+
 body {
   max-width: $mobile-max-width;
   margin: 0 auto;
