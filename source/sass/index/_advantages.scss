@@ -3,6 +3,7 @@
 .advantages {
   padding-left: $side-padding;
   padding-right: $side-padding;
+  padding-bottom: 41px;
 }
 
 .advantages__title {
@@ -27,7 +28,7 @@
   vertical-align: center;
   margin-bottom: 20px;
 
-  &:last-child() {
+  &:last-child {
     margin-bottom: 0;
   }
 }

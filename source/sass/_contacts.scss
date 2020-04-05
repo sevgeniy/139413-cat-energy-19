@@ -1,7 +1,7 @@
 @import "base";
 
 .contacts {
-  line-height: 20px;
+  line-height: 0px;
 }
 
 .contacts__wrapper {
@@ -11,6 +11,7 @@
   padding-left: $side-padding;
   padding-right: $side-padding;
   padding-bottom: 26px;
+  line-height: 20px;
 }
 
 .contacts__title {

@@ -4,18 +4,15 @@
 }
 
 .social__list {
-  list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  list-style: none;
 }
 
 .social__item {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-
   &:nth-child(2) {
     margin-left: 37px;
   }
@@ -25,5 +22,6 @@
   }
 }
 
-.social__link {
+.social__logo {
+  fill: #666666;
 }
