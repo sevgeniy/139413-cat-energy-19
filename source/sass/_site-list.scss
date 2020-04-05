@@ -18,6 +18,10 @@ $border: 1px solid #e6e6e6;
   text-transform: uppercase;
   border-top: $border;
 
+  &:first-child {
+    border-top: none;
+  }
+
   &:last-child {
     border-bottom: $border;
   }

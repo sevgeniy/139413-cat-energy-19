@@ -32,7 +32,7 @@
   color: $header-color;
   text-transform: uppercase;
 
-  &--required:after {
+  &--required::after {
     content: "*";
   }
 }
