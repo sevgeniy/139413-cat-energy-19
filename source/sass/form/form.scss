@@ -1,0 +1,62 @@
+@import "base";
+@import "text-input";
+
+.form {
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+}
+
+.form__title {
+  font-family: $header-font-family;
+  font-size: 14px;
+  line-height: 18px;
+  color: $header-color;
+  text-transform: uppercase;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.form__label {
+  margin-right: 10px;
+  font-family: $header-font-family;
+  color: $header-color;
+  text-transform: uppercase;
+
+  &--required::after {
+    content: "*";
+  }
+}
+
+.form__text,
+.form__email,
+.form__tel {
+  flex-grow: 1;
+}
+
+.form__fieldset-legend {
+  margin-bottom: 30px;
+  font-family: $header-font-family;
+  font-size: 20px;
+  line-height: 20px;
+  color: $header-color;
+}
+
+.form__comments {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__required-description {
+  text-align: center;
+  line-height: 16px;
+}

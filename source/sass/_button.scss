@@ -1,0 +1,16 @@
+@import "fonts";
+
+$bg-color: #68b738;
+$font-family: "Oswald", "Arial", sans-serif;
+
+.btn {
+  width: 100%;
+  padding: 11px 0;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $bg-color;
+  border: none;
+}

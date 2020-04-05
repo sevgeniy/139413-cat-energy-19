@@ -1,0 +1,23 @@
+@import "base";
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+  padding-bottom: 16px;
+  border-bottom: $border;
+}
+
+.page-header__logo {
+  width: 191;
+  height: 38;
+}
+
+.page-header__toggle {
+  font-size: 0;
+  line-height: 0;
+  vertical-align: center;
+}

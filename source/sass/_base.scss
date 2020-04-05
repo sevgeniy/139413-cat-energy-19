@@ -1,0 +1,27 @@
+@import "fonts";
+
+$mobile-max-width: 320px;
+$side-padding: 20px;
+
+$bg-color: #ffffff;
+
+$font-family: arial, sans-sefif;
+$font-size: 14px;
+$line-height: 18px;
+$color: #444444;
+
+$header-font-family: "Oswald", arial, sans-sefif; // probably should rename variable, because this font-family is used also for links
+$header-color: #111111;
+
+$border: 1px solid #ededed;
+
+body {
+  max-width: $mobile-max-width;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color;
+  line-height: $line-height;
+  background-color: $bg-color;
+}

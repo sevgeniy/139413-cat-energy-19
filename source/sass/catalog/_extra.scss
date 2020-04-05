@@ -1,0 +1,41 @@
+@import "base";
+
+.extra {
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+}
+
+.extra__title {
+  font-family: $header-font-family;
+  font-size: 24px;
+  line-height: 24px;
+  color: $header-color;
+}
+
+.extra__item {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.extra__promo {
+  padding-top: 190px;
+  padding-bottom: 48px;
+  background-color: #68b738;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.extra__promo-title {
+  max-width: 160px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+}
