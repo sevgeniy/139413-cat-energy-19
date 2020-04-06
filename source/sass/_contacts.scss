@@ -1,5 +1,3 @@
-@import "base";
-
 .contacts {
   line-height: 0;
 
@@ -20,11 +18,8 @@
 
 .contacts__title {
   max-width: 125px;
-  margin: 0;
-  font-family: $header-font-family;
   font-size: 16px;
-  font-weight: normal;
-  color: $header-color;
+  line-height: 20px;
   text-transform: uppercase;
 }
 

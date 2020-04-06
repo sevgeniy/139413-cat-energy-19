@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Каталог продукции</title>
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
@@ -43,7 +43,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Каталог продукции</h1>
+      <h1 class="header page-main__title">Каталог продукции</h1>
       <section class="products">
         <ul class="products__list">
           <li class="product">
@@ -55,8 +55,8 @@
                 height="144"
                 class="product__image"
               />
-              <div class="product__description">
-                <h2 class="product__title">Cat Energy Pro 500 г</h2>
+              <div class="product__descr">
+                <h2 class="header product__title">Cat Energy Pro 500 г</h2>
                 <table class="product__info">
                   <tr class="product__info-row">
                     <td class="product__property">Объём</td>
@@ -84,8 +84,8 @@
                 height="144"
                 class="product__image"
               />
-              <div class="product__description">
-                <h2 class="product__title">Cat Energy Pro 1000 г</h2>
+              <div class="product__descr">
+                <h2 class="header product__title">Cat Energy Pro 1000 г</h2>
                 <table class="product__info">
                   <tr class="product__info-row">
                     <td class="product__property">Объём</td>
@@ -113,8 +113,8 @@
                 height="144"
                 class="product__image"
               />
-              <div class="product__description">
-                <h2 class="product__title">Cat Energy Pro 500 г</h2>
+              <div class="product__descr">
+                <h2 class="header product__title">Cat Energy Pro 500 г</h2>
                 <table class="product__info">
                   <tr class="product__info-row">
                     <td class="product__property">Объём</td>
@@ -142,8 +142,8 @@
                 height="144"
                 class="product__image"
               />
-              <div class="product__description">
-                <h2 class="product__title">Cat Energy Pro 1000 г</h2>
+              <div class="product__descr">
+                <h2 class="header product__title">Cat Energy Pro 1000 г</h2>
                 <table class="product__info">
                   <tr class="product__info-row">
                     <td class="product__property">Объём</td>
@@ -171,8 +171,8 @@
                 height="144"
                 class="product__image"
               />
-              <div class="product__description">
-                <h2 class="product__title">Cat Energy Slim 500 г</h2>
+              <div class="product__descr">
+                <h2 class="header product__title">Cat Energy Slim 500 г</h2>
                 <table class="product__info">
                   <tr class="product__info-row">
                     <td class="product__property">Объём</td>
@@ -200,8 +200,8 @@
                 height="144"
                 class="product__image"
               />
-              <div class="product__description">
-                <h2 class="product__title">Cat Energy Slim 1000 г</h2>
+              <div class="product__descr">
+                <h2 class="header product__title">Cat Energy Slim 1000 г</h2>
                 <table class="product__info">
                   <tr class="product__info-row">
                     <td class="product__property">Объём</td>
@@ -229,8 +229,8 @@
                 height="144"
                 class="product__image"
               />
-              <div class="product__description">
-                <h2 class="product__title">Cat Energy Slim 500 г</h2>
+              <div class="product__descr">
+                <h2 class="header product__title">Cat Energy Slim 500 г</h2>
                 <table class="product__info">
                   <tr class="product__info-row">
                     <td class="product__property">Объём</td>
@@ -251,7 +251,7 @@
           </li>
         </ul>
         <div class="products__more">
-          <a class="products__load-more-btn" id="load-products" href="#">
+          <a class="products__more-btn" id="more-products" href="#">
             <svg
               version="1.1"
               id="Layer_1"
@@ -266,26 +266,26 @@
               xml:space="preserve"
             >
               <polygon
-                class="products__load-more-icon"
+                class="products__more-icon"
                 points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "
               />
             </svg>
           </a>
-          <label for="load-products" class="products__load-more-label">Показать ещё 100500 товаров</label>
-          <label for="show-all-products" class="products__show-all-label">
+          <label class="products__more-label" for="more-products">Показать ещё 100500 товаров</label>
+          <label class="products__all-label" for="all-products">
             На самом деле вкусов гораздо больше!
           </label>
-          <button id="show-all-products" class="btn products__show-all-btn">
+          <button class="btn products__all-btn" id="all-products">
             Показать все
           </button>
         </div>
       </section>
       <section class="extra">
-        <h2 class="extra__title products">Дополнительные товары</h2>
+        <h2 class="header extra__title">Дополнительные товары</h2>
         <ul class="extra__list products__list">
           <li class="extra__item product">
-            <div class="product__description">
-              <h3 class="extra__item product__title">Сахарозаменитель</h3>
+            <div class="product__descr">
+              <h3 class="header extra__item-title product__title">Сахарозаменитель</h3>
               <table class="product__info">
                 <tr>
                   <td class="product__property">1 упаковка</td>
@@ -296,8 +296,8 @@
             <button class="btn extra__buy-btn">Заказать</button>
           </li>
           <li class="extra__item product">
-            <div class="product__description">
-              <h3 class="extra__item product__title">Питьевая вода</h3>
+            <div class="product__descr">
+              <h3 class="header extra__item-title product__title">Питьевая вода</h3>
               <table class="product__info">
                 <tr>
                   <td class="product__property">5 литров</td>
@@ -308,8 +308,8 @@
             <button class="btn extra__buy-btn">Заказать</button>
           </li>
           <li class="extra__item product">
-            <div class="product__description">
-              <h3 class="extra__item product__title">Молоко</h3>
+            <div class="product__descr">
+              <h3 class="header extra__item-title product__title">Молоко</h3>
               <table class="product__info">
                 <tr>
                   <td class="product__property">1 литр</td>
@@ -320,8 +320,8 @@
             <button class="btn extra__buy-btn">Заказать</button>
           </li>
           <li class="extra__item product">
-            <div class="product__description">
-              <h3 class="extra__item product__title">Витамины</h3>
+            <div class="product__descr">
+              <h3 class="header extra__item-title product__title">Витамины</h3>
               <table class="product__info">
                 <tr>
                   <td class="product__property">1 упаковка (30 г)</td>
@@ -338,7 +338,7 @@
       </section>
       <section class="contacts contacts--bg-color-grey">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="header contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
