@@ -18,17 +18,17 @@
   border-bottom: $border;
 }
 
-.products__load-more-btn {
+.products__more-btn {
   font-size: 0;
   line-height: 0;
   text-decoration: none;
 }
 
-.products__load-more-icon {
+.products__more-icon {
   fill: #d3d3d3;
 }
 
-.products__load-more-label {
+.products__more-label {
   display: block;
   margin-top: 26px;
   margin-bottom: 12px;
@@ -39,13 +39,13 @@
   text-transform: uppercase;
 }
 
-.products__show-all-label {
+.products__all-label {
   display: block;
   font-size: 12px;
   margin-bottom: 20px;
 }
 
-.products__show-all-btn {
+.products__all-btn {
   color: $header-color;
   background-color: #f2f2f2;
 }
