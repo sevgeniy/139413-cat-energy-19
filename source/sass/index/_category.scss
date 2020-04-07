@@ -3,6 +3,7 @@
 $link-color: #111111;
 
 .category {
+  position: relative;
   margin-bottom: 20px;
   padding-top: 22px;
   padding-left: 20px;
@@ -23,6 +24,27 @@ $link-color: #111111;
   line-height: 37px;
   text-align: center;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+}
+
+.category:nth-child(1) .category__title::before {
+  background-image: url("../../img/icon-cat-slim.svg");
+}
+
+.category:nth-child(2) .category__title::before {
+  background-image: url("../../img/icon-cat-pro.svg");
 }
 
 .category__description {
@@ -39,4 +61,9 @@ $link-color: #111111;
   color: $link-color;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.category__link-arrow {
+  margin-left: 14px;
+  fill: $header-color;
 }

@@ -1,5 +1,3 @@
-// ;
-
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -14,10 +12,26 @@
 .page-header__logo {
   width: 191;
   height: 38;
+  line-height: 0;
+}
+
+.page-header__open,
+.page-header__close {
+  display: none;
 }
 
 .page-header__toggle {
-  font-size: 0;
   line-height: 0;
   vertical-align: center;
+  border: none;
+  background-color: $bg-color;
+  cursor: pointer;
+
+  &--opened .page-header__close {
+    display: block;
+  }
+
+  &--closed .page-header__open {
+    display: block;
+  }
 }
