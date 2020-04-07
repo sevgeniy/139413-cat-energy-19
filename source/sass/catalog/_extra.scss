@@ -1,4 +1,5 @@
 .extra {
+  position: relative;
   padding-left: $side-padding;
   padding-right: $side-padding;
 }
@@ -8,6 +9,18 @@
   margin-bottom: 31px;
   font-size: 24px;
   line-height: 24px;
+
+  // need to do it the same way as form legends😉
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background-color: $green;
+  }
 }
 
 .extra__item {
@@ -29,9 +42,10 @@
   padding-top: 190px;
   padding-bottom: 48px;
   background-color: #68b738;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-size: 55px 60px, 100% 100%;
+  background-position: center 65px, center top;
+  background-repeat: no-repeat, no-repeat;
   text-align: center;
 }
 
