@@ -1,27 +1,60 @@
-@import "../base";
-
 .advantages {
-  padding-left: $side-padding;
-  padding-right: $side-padding;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
   padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }
 
 .advantages__title {
   margin-top: 32px;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .advantages__list {
-  position: relative;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .advantages__item {
-  list-style: none;
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
   padding-left: 80px;
   vertical-align: center;
-  margin-bottom: 20px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+    padding-top: 117px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 
   &::before {
     content: "";
@@ -33,6 +66,12 @@
     background-color: $green;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &:nth-child(1)::before {
@@ -44,14 +83,18 @@
   }
 
   &:nth-child(3)::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../../img/advantage-dining@1x.png");
   }
 
   &:nth-child(4)::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../../img/advantage-clock@1x.png");
   }
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
   }
 }

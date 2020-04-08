@@ -1,17 +1,35 @@
+.page-header {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 11px;
-  padding-left: $side-padding;
-  padding-right: $side-padding;
-  padding-bottom: 16px;
-  border-bottom: $border;
+  flex-wrap: wrap;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }
 
 .page-header__logo {
   width: 191;
   height: 38;
+  margin-top: 11px;
+  margin-bottom: 16px;
   line-height: 0;
 }
 
@@ -34,4 +52,12 @@
   &--closed .page-header__open {
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav {
+  flex-grow: 1;
 }

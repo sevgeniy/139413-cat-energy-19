@@ -4,9 +4,17 @@
 $footer-border-bottom: 1px solid #d9d9d9;
 
 .page-footer {
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
-  padding-left: $side-padding;
-  padding-right: $side-padding;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
@@ -15,15 +23,59 @@ $footer-border-bottom: 1px solid #d9d9d9;
   padding-top: 39px;
   padding-bottom: 31px;
   border-bottom: $footer-border-bottom;
+
+  // TODO: probably should style it using class😉
+  g {
+    fill: $black;
+  }
+}
+
+.page-footer__catenergy {
+  width: 128px;
+  height: 24px;
 }
 
 .page-footer__social {
   padding-top: 23px;
   padding-bottom: 21px;
   border-bottom: $footer-border-bottom;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-footer__copyright {
   padding-top: 22px;
   padding-bottom: 22px;
+}
+
+.social__vk {
+  width: 22px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.social__igm {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__fb {
+  width: 10px;
+  height: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
 }

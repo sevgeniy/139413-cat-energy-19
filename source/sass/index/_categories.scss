@@ -1,6 +1,18 @@
-@import "../base";
-
 .categories {
-  padding-left: $side-padding;
-  padding-right: $side-padding;
+  display: flex;
+  flex-direction: column;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }

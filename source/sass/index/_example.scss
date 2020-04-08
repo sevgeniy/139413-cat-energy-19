@@ -1,17 +1,54 @@
-@import "../base";
-
 $example-bg-color: #f2f2f2;
 
 .example {
   padding-top: 32px;
-  padding-left: $side-padding;
-  padding-right: $side-padding;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
   padding-bottom: 38px;
   background-color: $example-bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }
 
 .example__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
+}
+
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.example__second-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__before-after {
+  text-align: center;
 }
 
 .example__facts {
@@ -28,6 +65,16 @@ $example-bg-color: #f2f2f2;
   position: relative;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
+  }
 }
 
 .example__fact-name {
@@ -42,6 +89,22 @@ $example-bg-color: #f2f2f2;
   vertical-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-right: 57px;
+    padding-bottom: 23px;
+    padding-left: 57px;
+    font-size: 30px;
+    border-radius: 2px;
+  }
+}
+
+.example__fact:nth-child(2) .example__fact-name {
+  @media (min-width: $tablet-width) {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
 }
 
 .example__fact-description {
@@ -54,6 +117,10 @@ $example-bg-color: #f2f2f2;
   line-height: 12px;
   color: $color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .example__costs {
@@ -64,6 +131,10 @@ $example-bg-color: #f2f2f2;
   color: $header-color;
   text-transform: uppercase;
   margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .example__image {
@@ -80,4 +151,11 @@ $example-bg-color: #f2f2f2;
   color: $header-color;
   text-transform: uppercase;
   justify-content: space-around;
+}
+
+.example__before,
+.example__after {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

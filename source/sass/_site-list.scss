@@ -4,6 +4,16 @@ $border: 1px solid #e6e6e6;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .site-list__item {
@@ -16,16 +26,30 @@ $border: 1px solid #e6e6e6;
   text-transform: uppercase;
   border-top: $border;
 
-  &:first-child {
-    border-top: none;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    font-size: 20px;
+    color: $white;
   }
 
   &:last-child {
     border-bottom: $border;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }
 
 .site-list__link {
   color: $header-color;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: white;
+  }
 }
