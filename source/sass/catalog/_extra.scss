@@ -8,6 +8,11 @@
     padding-right: $tablet-padding;
     padding-bottom: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }
 
 .extra__title {
@@ -39,6 +44,11 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin-right: 80px;
+  }
 }
 
 .extra__item {
@@ -54,6 +64,17 @@
     background-color: $white;
     border: 1px solid #e6e6e6;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    max-width: none;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
   }
 
   &:nth-child(2n + 1) {
@@ -75,7 +96,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
   }
 }
 
@@ -99,6 +119,12 @@
   margin-bottom: 16px;
 }
 
+.extra__content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .extra__promo {
   padding-top: 190px;
   padding-bottom: 48px;
@@ -116,6 +142,18 @@
     background-position: 91px 65px, center top;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    height: 289px;
+    padding-top: 190px;
+    padding-left: 37px;
+    padding-right: 37px;
+    box-sizing: border-box;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
+    background-position: center 65px, center top;
+    text-align: center;
+  }
 }
 
 .extra__promo-title {
@@ -130,6 +168,13 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 13px;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    margin-left: 40px;
   }
 }

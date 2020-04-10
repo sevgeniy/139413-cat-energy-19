@@ -14,6 +14,11 @@
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }
 
 .products__more {

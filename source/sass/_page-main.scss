@@ -7,4 +7,9 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }

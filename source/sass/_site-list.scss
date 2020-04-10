@@ -33,7 +33,6 @@ $border: 1px solid #e6e6e6;
   @media (min-width: $desktop-width) {
     margin-right: 20px;
     font-size: 20px;
-    color: $white;
   }
 
   &:last-child {
@@ -50,6 +49,12 @@ $border: 1px solid #e6e6e6;
   text-decoration: none;
 
   @media (min-width: $desktop-width) {
-    color: white;
+    color: $header-color;
+  }
+}
+
+.site-list--index .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $white;
   }
 }

@@ -1,5 +1,14 @@
 .page-header {
+  color: $white;
+
   @media (min-width: $desktop-width) {
+    color: $header-color;
+  }
+}
+
+.page-header--index {
+  @media (min-width: $desktop-width) {
+    color: $white;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right top;
