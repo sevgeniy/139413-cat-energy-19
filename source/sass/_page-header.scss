@@ -59,7 +59,7 @@
   }
 
   &--closed .page-header__open {
-    display: none;
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
