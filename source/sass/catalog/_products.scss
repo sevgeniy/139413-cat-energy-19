@@ -7,6 +7,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
 }
 
 .products__more {
@@ -16,6 +23,12 @@
   padding-bottom: 24px;
   text-align: center;
   border-bottom: $border;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    background-color: $white;
+    border: 1px solid #e6e6e6;
+  }
 }
 
 .products__more-btn {
@@ -25,7 +38,17 @@
 }
 
 .products__more-icon {
-  fill: #d3d3d3;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+
+  polygon {
+    fill: #d3d3d3;
+  }
 }
 
 .products__more-label {
@@ -37,15 +60,29 @@
   line-height: 20px;
   color: $header-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .products__all-label {
   display: block;
   font-size: 12px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .products__all-btn {
   color: $header-color;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 16px;
+    color: $grey;
+  }
 }

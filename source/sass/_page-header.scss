@@ -50,7 +50,7 @@
   }
 
   &--closed .page-header__open {
-    display: block;
+    display: none;
   }
 
   @media (min-width: $tablet-width) {

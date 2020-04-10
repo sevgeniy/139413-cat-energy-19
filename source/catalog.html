@@ -50,16 +50,16 @@
             <rect width="24" height="2" />
           </svg>
         </button>
+        <nav class="main-nav main-nav--closed">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Каталог продукции</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Подбор программы</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav main-nav--closed">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Главная</a>
-          </li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Каталог продукции</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Подбор программы</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <h1 class="header page-main__title">Каталог продукции</h1>
@@ -268,44 +268,38 @@
             </div>
             <button class="btn product__buy-btn">Заказать</button>
           </li>
-        </ul>
-        <div class="products__more">
-          <a class="products__more-btn" id="more-products" href="#">
-            <svg
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              style="enable-background:new 0 0 30 30;"
-              xml:space="preserve"
-            >
-              <polygon
+          <li class="product products__more">
+            <a class="products__more-btn" id="more-products" href="#">
+              <svg
                 class="products__more-icon"
-                points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "
-              />
-            </svg>
-          </a>
-          <label class="products__more-label" for="more-products">Показать ещё 100500 товаров</label>
-          <label class="products__all-label" for="all-products">
-            На самом деле вкусов гораздо больше!
-          </label>
-          <button class="btn products__all-btn" id="all-products">
-            Показать все
-          </button>
-        </div>
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 30 30"
+                style="enable-background:new 0 0 30 30;"
+                xml:space="preserve"
+              >
+                <polygon points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 " />
+              </svg>
+            </a>
+            <label class="products__more-label" for="more-products">Показать ещё 100500 товаров</label>
+            <label class="products__all-label" for="all-products">
+              На самом деле вкусов гораздо больше!
+            </label>
+            <button class="btn products__all-btn" id="all-products">Показать все</button>
+          </li>
+        </ul>
       </section>
       <section class="extra">
         <h2 class="header extra__title">Дополнительные товары</h2>
         <ul class="extra__list products__list">
           <li class="extra__item product">
-            <div class="product__descr">
+            <div class="extra__descr product__descr">
               <h3 class="header extra__item-title product__title">Сахарозаменитель</h3>
-              <table class="product__info">
+              <table class="extra__info product__info">
                 <tr>
                   <td class="product__property">1 упаковка</td>
                   <td class="product__value product__value--price">100 р.</td>
@@ -315,9 +309,9 @@
             <button class="btn extra__buy-btn">Заказать</button>
           </li>
           <li class="extra__item product">
-            <div class="product__descr">
+            <div class="extra__descr product__descr">
               <h3 class="header extra__item-title product__title">Питьевая вода</h3>
-              <table class="product__info">
+              <table class="extra__info product__info">
                 <tr>
                   <td class="product__property">5 литров</td>
                   <td class="product__value product__value--price">50 р.</td>
@@ -327,9 +321,9 @@
             <button class="btn extra__buy-btn">Заказать</button>
           </li>
           <li class="extra__item product">
-            <div class="product__descr">
+            <div class="extra__descr product__descr">
               <h3 class="header extra__item-title product__title">Молоко</h3>
-              <table class="product__info">
+              <table class="extra__info product__info">
                 <tr>
                   <td class="product__property">1 литр</td>
                   <td class="product__value product__value--price">100 р.</td>
@@ -339,9 +333,9 @@
             <button class="btn extra__buy-btn">Заказать</button>
           </li>
           <li class="extra__item product">
-            <div class="product__descr">
+            <div class="extra__descr product__descr">
               <h3 class="header extra__item-title product__title">Витамины</h3>
-              <table class="product__info">
+              <table class="extra__info product__info">
                 <tr>
                   <td class="product__property">1 упаковка (30 г)</td>
                   <td class="product__value product__value--price">300 р.</td>

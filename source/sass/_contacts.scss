@@ -19,6 +19,11 @@
   padding-bottom: 26px;
   line-height: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;

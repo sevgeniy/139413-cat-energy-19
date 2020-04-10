@@ -2,6 +2,12 @@
   position: relative;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+    padding-bottom: 76px;
+  }
 }
 
 .extra__title {
@@ -9,6 +15,10 @@
   margin-bottom: 31px;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
 
   // need to do it the same way as form legends😉
   &::before {
@@ -23,12 +33,63 @@
   }
 }
 
+.extra__list {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .extra__item {
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 27px;
+    padding-left: 37px;
+    padding-right: 37px;
+    background-color: $white;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+  }
+
+  &:nth-child(2n + 1) {
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
+
   &:last-child {
     border-bottom: none;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
+}
+
+.extra__descr {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.extra__info {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 26px;
+  }
+
+  // TODO: fix this cascad 🚨
+  td {
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }
 
@@ -47,6 +108,14 @@
   background-position: center 65px, center top;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    padding-left: 423px;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
+    background-position: 91px 65px, center top;
+    text-align: left;
+  }
 }
 
 .extra__promo-title {
@@ -55,4 +124,12 @@
   font-size: 16px;
   color: #ffffff;
   font-weight: normal;
+}
+
+.extra__buy-btn {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
