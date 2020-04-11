@@ -1,13 +1,51 @@
 .product {
   margin: 0;
   padding: 0;
-  padding-left: $side-padding;
-  padding-right: $side-padding;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
   padding-bottom: 24px;
   border-bottom: $border;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    margin-top: 140px;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+    border-bottom: none;
+    background-color: $light-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    box-sizing: border-box;
+    width: 245px;
+    margin-top: 140px;
+    margin-right: 80px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-bottom: none;
+    background-color: $light-grey;
+  }
 
   &:first-child {
     border-top: $border;
+  }
+}
+
+.product:nth-child(2n + 1) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-right: 0;
+  }
+}
+
+.product:nth-child(4n + 4) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -16,13 +54,45 @@
   align-items: center;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.product__image {
+  align-self: center;
+  width: 140px;
+  height: 144px;
+}
+
+.product:nth-child(2n + 1) .product__image {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+    margin-top: -46px;
+  }
+}
+
+.product:nth-child(2n) .product__image {
+  @media (min-width: $tablet-width) {
+    width: 195px;
+    height: 208px;
+    margin-top: -82px;
+  }
 }
 
 .product__title {
-  max-width: 75px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 
 .product__descr {
@@ -33,6 +103,19 @@
   width: 100%;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    font-size: 16px;
+    border-collapse: collapse;
+  }
+}
+
+.product__property,
+.product__value {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $grey;
+  }
 }
 
 .product__property {
@@ -45,4 +128,13 @@
 
 .product__value--price {
   text-transform: uppercase;
+}
+
+.product__buy-btn {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 16px;
+  }
 }

@@ -1,6 +1,17 @@
 .page-main__title {
   padding-top: 31px;
-  padding-left: $side-padding;
-  padding-right: $side-padding;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
   padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }

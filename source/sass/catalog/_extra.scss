@@ -1,6 +1,18 @@
 .extra {
-  padding-left: $side-padding;
-  padding-right: $side-padding;
+  position: relative;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }
 
 .extra__title {
@@ -8,14 +20,96 @@
   margin-bottom: 31px;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  // need to do it the same way as form legends😉
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background-color: $green;
+  }
+}
+
+.extra__list {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin-right: 80px;
+  }
 }
 
 .extra__item {
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 27px;
+    padding-left: 37px;
+    padding-right: 37px;
+    background-color: $white;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    max-width: none;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  &:nth-child(2n + 1) {
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
+
   &:last-child {
     border-bottom: none;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
+}
+
+.extra__descr {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.extra__info {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 26px;
+  }
+
+  // TODO: fix this cascad 🚨
+  td {
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }
 
@@ -25,14 +119,41 @@
   margin-bottom: 16px;
 }
 
+.extra__content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .extra__promo {
   padding-top: 190px;
   padding-bottom: 48px;
   background-color: #68b738;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-size: 55px 60px, 100% 100%;
+  background-position: center 65px, center top;
+  background-repeat: no-repeat, no-repeat;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    padding-left: 423px;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
+    background-position: 91px 65px, center top;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    height: 289px;
+    padding-top: 190px;
+    padding-left: 37px;
+    padding-right: 37px;
+    box-sizing: border-box;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
+    background-position: center 65px, center top;
+    text-align: center;
+  }
 }
 
 .extra__promo-title {
@@ -41,4 +162,19 @@
   font-size: 16px;
   color: #ffffff;
   font-weight: normal;
+}
+
+.extra__buy-btn {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    margin-left: 40px;
+  }
 }
