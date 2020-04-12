@@ -28,6 +28,7 @@ $border: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +40,7 @@ $border: 1px solid #e6e6e6;
     border-bottom: $border;
 
     @media (min-width: $tablet-width) {
-      border: none;
+      border-bottom: none;
     }
   }
 }
@@ -53,7 +54,7 @@ $border: 1px solid #e6e6e6;
   }
 }
 
-.site-list--index .site-list__link {
+.page--index .site-list__link {
   @media (min-width: $desktop-width) {
     color: $white;
   }

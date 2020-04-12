@@ -1,6 +1,4 @@
 .categories {
-  display: flex;
-  flex-direction: column;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
 
@@ -10,8 +8,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
   }
