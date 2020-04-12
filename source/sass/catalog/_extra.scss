@@ -20,21 +20,20 @@
   margin-bottom: 31px;
   font-size: 24px;
   line-height: 24px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
+    width: 350px;
+    padding-left: 37px;
+    padding-right: 37px;
     font-size: 36px;
+    line-height: 36px;
   }
 
-  // need to do it the same way as form legends😉
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 13px;
-    right: 0;
-    width: 53px;
-    height: 3px;
-    background-color: $green;
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include heading-line();
+    }
   }
 }
 
@@ -96,13 +95,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
 .extra__info {
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-bottom: 26px;
+    margin-bottom: 0;
   }
 
   // TODO: fix this cascad 🚨

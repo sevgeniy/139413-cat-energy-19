@@ -5,10 +5,10 @@
   padding-right: $mobile-padding;
   padding-bottom: 24px;
   border-bottom: $border;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
+    width: calc(50% - 30px);
+    box-sizing: border-box;
     margin-top: 140px;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
@@ -36,10 +36,6 @@
 .product:nth-child(2n + 1) {
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     margin-right: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin-right: 0;
   }
 }
 
@@ -113,6 +109,8 @@
 
 .product__property,
 .product__value {
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $grey;
   }
