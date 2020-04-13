@@ -1,0 +1,34 @@
+.label {
+  margin-right: 10px;
+  font-family: $header-font-family;
+  color: $header-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  &--required::after {
+    content: "*";
+  }
+}
+
+.radio + .label {
+  margin-left: 46px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    line-height: 60px;
+  }
+}
+
+.checkbox + .label {
+  margin-left: 46px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    line-height: 60px;
+  }
+}

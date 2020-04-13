@@ -1,0 +1,28 @@
+.checkbox + .label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid #e6e6e6;
+  top: 5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.checkbox:checked + .label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 11px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../../img/icon-tick.svg");
+}

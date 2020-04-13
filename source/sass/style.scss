@@ -2,7 +2,11 @@
 // blocks
 @import "blocks/header";
 @import "blocks/text-input";
+@import "blocks/label";
+@import "blocks/radio";
+@import "blocks/checkbox";
 // mixins
+@import "mixins/side-padding";
 @import "mixins/heading-line";
 // page blocks
 @import "contacts";
