@@ -51,6 +51,14 @@
 
 .contacts__address {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts__map {

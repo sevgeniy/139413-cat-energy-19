@@ -1,4 +1,4 @@
-.categories {
+@mixin side-padding() {
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
 
@@ -8,9 +8,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
   }

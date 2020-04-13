@@ -3,11 +3,13 @@
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
   padding-bottom: 36px;
+  border-top: 1px solid $light-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {

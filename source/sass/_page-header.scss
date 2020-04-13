@@ -1,14 +1,11 @@
 .page-header {
-  color: $white;
-
   @media (min-width: $desktop-width) {
     color: $header-color;
   }
 }
 
-.page-header--index {
+.page--index .page-header {
   @media (min-width: $desktop-width) {
-    color: $white;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right top;
@@ -35,8 +32,8 @@
 }
 
 .page-header__logo {
-  width: 191;
-  height: 38;
+  width: 191px;
+  height: 38px;
   margin-top: 11px;
   margin-bottom: 16px;
   line-height: 0;
@@ -49,7 +46,6 @@
 
 .page-header__toggle {
   line-height: 0;
-  vertical-align: center;
   border: none;
   background-color: $bg-color;
   cursor: pointer;

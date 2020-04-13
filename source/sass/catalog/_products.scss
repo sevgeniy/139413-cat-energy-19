@@ -1,6 +1,11 @@
 .products {
   border-left: $border;
   border-right: $border;
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .products__list {
