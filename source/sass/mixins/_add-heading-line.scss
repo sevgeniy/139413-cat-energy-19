@@ -1,15 +1,14 @@
-@mixin heading-line() {
+@mixin add-heading-line() {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  right: 0;
-  width: 100%;
+  top: 11px;
+  width: 1200px;
   height: 3px;
   background-color: $green;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    top: 20px;
+    top: 17px;
   }
 }

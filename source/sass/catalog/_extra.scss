@@ -15,7 +15,12 @@
   }
 }
 
+.extra__title-container {
+  display: flex;
+}
+
 .extra__title {
+  position: relative;
   margin-top: 31px;
   margin-bottom: 31px;
   font-size: 24px;
@@ -25,14 +30,32 @@
   @media (min-width: $tablet-width) {
     width: 350px;
     padding-left: 37px;
-    padding-right: 37px;
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (min-width: $tablet-width) {
-    &::after {
-      @include heading-line();
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+
+  &::before {
+    @include add-heading-line();
+    left: calc(100% + 24px);
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      @include add-heading-line();
+      right: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include add-heading-line();
+      right: calc(100% + 40px);
     }
   }
 }

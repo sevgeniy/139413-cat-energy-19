@@ -11,24 +11,24 @@
   &--required::after {
     content: "*";
   }
-}
 
-.radio + .label {
-  margin-left: 46px;
-  line-height: 40px;
+  &--radio {
+    margin-left: 46px;
+    line-height: 30px;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 60px;
-    line-height: 60px;
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+      line-height: 40px;
+    }
   }
-}
 
-.checkbox + .label {
-  margin-left: 46px;
-  line-height: 40px;
+  &--checkbox {
+    margin-left: 46px;
+    line-height: 30px;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 60px;
-    line-height: 60px;
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+      line-height: 40px;
+    }
   }
 }
