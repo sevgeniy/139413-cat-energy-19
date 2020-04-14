@@ -139,9 +139,8 @@
 }
 
 .form__fieldset-legend {
-  max-width: 155px;
+  position: relative;
   margin-bottom: 30px;
-
   font-size: 20px;
   line-height: 20px;
   background-color: $bg-color;
@@ -153,8 +152,20 @@
     line-height: 36px;
   }
 
+  &::before {
+    @include add-heading-line();
+    left: calc(100% + 24px);
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 40px);
+    }
+  }
+
   &::after {
-    @include heading-line();
+    @media (min-width: $tablet-width) {
+      @include add-heading-line();
+      right: calc(100% + 40px);
+    }
   }
 }
 
@@ -221,7 +232,8 @@
 }
 
 .form__legend-container {
-  position: relative;
+  // position: relative;
+  display: flex;
 }
 
 .form__program-info {
