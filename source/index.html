@@ -9,9 +9,12 @@
   <body class="page page--index">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <img src="img/logo-mobile.svg" alt="Логотип в хедере" width="191" height="38" />
-        </div>
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1444px)" />
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" />
+          <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип в хедере" width="191" height="38" />
+        </picture>
+
         <button class="js-toggle page-header__toggle page-header__toggle--opened" href="#">
           <span class="visually-hidden">Закрыть меню</span>
           <svg

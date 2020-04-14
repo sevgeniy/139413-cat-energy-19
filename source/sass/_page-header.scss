@@ -15,12 +15,20 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+
+  padding-top: 11px;
+  padding-bottom: 16px;
+
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
 
+  line-height: 0;
+
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    margin-bottom: 0;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
   }
@@ -34,17 +42,22 @@
 .page-header__logo {
   width: 191px;
   height: 38px;
-  margin-top: 11px;
   margin-bottom: 16px;
-  line-height: 0;
-}
 
-.page-header__open,
-.page-header__close {
-  display: none;
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    height: 58px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__toggle {
+  margin-top: 12px;
   line-height: 0;
   border: none;
   background-color: $bg-color;
@@ -63,6 +76,7 @@
   }
 }
 
-.main-nav {
-  flex-grow: 1;
+.page-header__open,
+.page-header__close {
+  display: none;
 }
