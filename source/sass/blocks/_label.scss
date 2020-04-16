@@ -20,6 +20,10 @@
       margin-left: 60px;
       line-height: 40px;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--checkbox {
@@ -29,6 +33,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 60px;
       line-height: 40px;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

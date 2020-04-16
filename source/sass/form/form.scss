@@ -104,29 +104,37 @@
   &--tel {
     position: relative;
   }
+}
 
-  &--tel::after,
-  &--email::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
+.form__email-icon {
+  display: block;
+  position: absolute;
+  right: 17px;
+  width: 17px;
+  height: 17px;
+}
 
-  &--tel::after {
-    right: 12px;
-    width: 20px;
-    height: 20px;
-    background-image: url("../../img/icon-phone.svg");
-  }
+.form__tel-icon {
+  display: block;
+  position: absolute;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+}
 
-  &--email::after {
-    right: 17px;
-    width: 17px;
-    height: 13px;
-    background-image: url("../../img/icon-mail.svg");
-  }
+.form__email-icon-path,
+.form__tel-icon-path {
+  fill: $header-color;
+}
+
+.text-input:focus + .form__email-icon .form__email-icon-path,
+.text-input:focus + .form__tel-icon .form__tel-icon-path {
+  fill: $green;
+}
+
+.text-input--error + .form__email-icon .form__email-icon-path,
+.text-input--error + .form__tel-icon .form__tel-icon-path {
+  fill: $input-border-color-error;
 }
 
 .form__email-and-tel {

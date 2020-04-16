@@ -111,6 +111,14 @@ $link-color: #111111;
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+
+    .category__link-arrow-icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 .category__link-arrow-icon {

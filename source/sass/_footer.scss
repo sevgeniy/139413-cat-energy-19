@@ -32,12 +32,24 @@ $footer-border-bottom: 1px solid #d9d9d9;
   border-bottom: $footer-border-bottom;
 
   // TODO: probably should style it using class😉
-  g {
+  .page-footer__logo-group {
     fill: $black;
+  }
+
+  &:hover {
+    .page-footer__logo-group {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    .page-footer__logo-group {
+      opacity: 0.6;
+    }
   }
 }
 
-.page-footer__catenergy {
+.page-footer__cat-energy {
   width: 128px;
   height: 24px;
 }
@@ -55,6 +67,21 @@ $footer-border-bottom: 1px solid #d9d9d9;
 .page-footer__copyright {
   padding-top: 22px;
   padding-bottom: 22px;
+}
+
+.social__link {
+  &:hover {
+    & .social__logo {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    & .social__logo {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__vk {
@@ -84,5 +111,37 @@ $footer-border-bottom: 1px solid #d9d9d9;
   @media (min-width: $tablet-width) {
     width: 14px;
     height: 28px;
+  }
+}
+
+.copyright__text {
+  color: $grey;
+
+  &:hover {
+    color: $grey;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  .copyright__logo-path {
+    fill: $copyright-color;
+  }
+
+  &:hover {
+    .copyright__logo-path {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    .copyright__logo-path {
+      fill: $green;
+      opacity: 0.3;
+    }
   }
 }

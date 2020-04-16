@@ -5,5 +5,19 @@
   font-family: $header-font-family;
   font-size: 16px;
   line-height: 18px;
-  border: $border;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $input-border-color;
+
+  &:hover {
+    border-color: $input-border-color-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $input-border-color-active;
+  }
+
+  &--error {
+    outline: 2px solid $input-border-color-error;
+  }
 }

@@ -11,11 +11,20 @@ $grey: #444444;
 $black: #111111;
 $white: #ffffff;
 $green: #68b738;
+$dark-green: #5eaa2f;
 $light-grey: #f2f2f2;
+$dark-grey: #ebebeb;
+$copyright-color: $grey;
+
+// text-input border-color
+$input-border-color: #e6e6e6;
+$input-border-color-hover: #cdcdcd;
+$input-border-color-active: $grey;
+$input-border-color-error: #ff8282;
 
 $mobile-padding: 20px;
 $tablet-padding: 30px;
-$desktop-padding: 111px;
+$desktop-padding: 110px;
 
 $mobile-max-width: 320px;
 
@@ -29,7 +38,7 @@ $color: $grey;
 $header-font-family: "Oswald", arial, sans-sefif; // probably should rename variable, because this font-family is used also for links
 $header-color: $black;
 
-$border: 1px solid #ededed;
+$border: 1px solid #e6e6e6;
 
 .page {
   width: $mobile-width;

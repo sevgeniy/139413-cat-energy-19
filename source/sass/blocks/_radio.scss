@@ -16,6 +16,10 @@
     height: 40px;
     border-radius: 20px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .radio:checked + .label::after {
@@ -36,5 +40,9 @@
     height: 18px;
     border-radius: 9px;
     background-color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,6 +1,5 @@
 @import "fonts";
 
-$bg-color: #68b738;
 $font-family: "Oswald", "Arial", sans-serif;
 
 .btn {
@@ -11,7 +10,7 @@ $font-family: "Oswald", "Arial", sans-serif;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: $bg-color;
+  background-color: $green;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -19,5 +18,14 @@ $font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     padding: 15px 26px;
+  }
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark-green;
   }
 }
