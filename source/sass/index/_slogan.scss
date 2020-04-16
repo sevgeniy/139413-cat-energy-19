@@ -9,10 +9,15 @@ $color: #ffffff;
   padding-right: $mobile-padding;
   padding-bottom: 22px;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-size: 280px auto, 320px auto;
   background-position: center 168px, center top;
   background-repeat: no-repeat, no-repeat;
   background-color: $color; // color and bg-color are same. possible issues if bg-image won't download.
   text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 62px;
@@ -21,7 +26,12 @@ $color: #ffffff;
     padding-left: $tablet-padding + 90px;
     text-align: left;
     background-image: url("../img/index-can-tablet@1x.jpg");
+    background-size: 709px auto;
     background-position: center 259px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +40,12 @@ $color: #ffffff;
     padding-bottom: 387px;
     padding-left: $desktop-padding + 83px;
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-size: 552px auto, 720px auto;
     background-position: center 200px, right -104px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
