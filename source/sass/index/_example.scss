@@ -1,7 +1,5 @@
 .example {
   padding-top: 32px;
-  padding-left: $mobile-padding;
-  padding-right: $mobile-padding;
   padding-bottom: 38px;
   background-color: $light-grey;
 
@@ -18,6 +16,8 @@
 
 .example__title {
   margin-bottom: 34px;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -47,6 +47,16 @@
 
 .example__before-after {
   text-align: center;
+}
+
+.example__description-facts {
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .example__facts {
@@ -138,9 +148,17 @@
 }
 
 .example__image {
-  width: 280px;
-  height: 232px;
+  width: 320px;
+  height: auto;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+  }
 }
 
 .example__image-description {
