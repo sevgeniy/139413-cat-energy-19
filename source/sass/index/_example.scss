@@ -45,10 +45,10 @@
 
 .example__before-after {
   @include add-side-paddings(0, 0, $desktop-padding-left: 0);
+  padding-bottom: 38px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 38px;
     background-color: $light-grey;
   }
 }
