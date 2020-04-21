@@ -23,7 +23,7 @@ $link-color: #111111;
     padding-right: 52px;
   }
 
-  &:last-child {
+  &:nth-child(2) {
     margin-bottom: 0;
 
     @media (min-width: $desktop-width) {
@@ -36,26 +36,35 @@ $link-color: #111111;
   margin-bottom: 25px;
   padding-top: 17px;
   padding-bottom: 12px;
+  padding-left: 77px;
   font-size: 24px;
-  line-height: 37px;
-  text-align: center;
+  line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 24px;
+    left: 20px;
     display: block;
     width: 50px;
     height: 50px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border: 1px solid black;
     border-radius: 25px;
+    background-color: $green;
 
     @media (min-width: $tablet-width) {
-      top: 50px;
-      right: 20px;
+      left: auto;
+      top: 92px;
+      right: 55px;
       width: 200px;
       height: 200px;
       border-radius: 100px;
@@ -63,6 +72,7 @@ $link-color: #111111;
 
     @media (min-width: $desktop-width) {
       top: 47px;
+      right: auto;
       left: 52px;
       width: 100px;
       height: 100px;
@@ -70,22 +80,61 @@ $link-color: #111111;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    text-align: left;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
-  @media (min-width: $desktop-width) {
-    text-align: center;
+  &--slim::after {
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../../img/icon-cat-slim.svg");
+
+    @media (min-width: $tablet-width) {
+      left: auto;
+      top: 80px;
+      right: 92px;
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      right: auto;
+      left: 66px;
+      width: 70px;
+      height: 97px;
+    }
   }
-}
 
-.category__title-slim::before {
-  background-image: url("../../img/icon-cat-slim.svg");
-}
+  &--pro::after {
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../img/icon-cat-pro.svg");
 
-.category__title-pro::before {
-  background-image: url("../../img/icon-cat-pro.svg");
+    @media (min-width: $tablet-width) {
+      top: 135px;
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 69px;
+      left: 34px;
+      right: auto;
+      width: 134px;
+      height: 56px;
+    }
+  }
 }
 
 .category__description {
