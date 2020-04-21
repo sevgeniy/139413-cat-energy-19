@@ -9,6 +9,10 @@
   border-style: solid;
   border-color: $input-border-color;
 
+  &::placeholder {
+    text-transform: uppercase;
+  }
+
   &:hover {
     border-color: $input-border-color-hover;
   }

@@ -1,17 +1,12 @@
 .extra {
   position: relative;
-  padding-left: $mobile-padding;
-  padding-right: $mobile-padding;
+
+  @include add-side-paddings();
+
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-left: $tablet-padding;
-    padding-right: $tablet-padding;
     padding-bottom: 76px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: $desktop-padding;
-    padding-right: $desktop-padding;
   }
 }
 
@@ -115,6 +110,9 @@
 }
 
 .extra__descr {
+  padding-left: 0;
+  padding-right: 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
