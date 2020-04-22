@@ -21,7 +21,7 @@
             <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип в хедере" width="191" height="38" />
           </picture>
         </a>
-        <button class="js-toggle page-header__toggle page-header__toggle--closed" href="#">
+        <button class="js-toggle page-header__toggle page-header__toggle--closed page-header__toggle--no-js" href="#">
           <span class="visually-hidden">Закрыть меню</span>
           <svg
             class="page-header__close"
@@ -59,7 +59,7 @@
             <rect width="24" height="2" />
           </svg>
         </button>
-        <nav class="main-nav main-nav--closed">
+        <nav class="js-main-nav main-nav main-nav--closed main-nav--no-js">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -655,5 +655,6 @@ z"
       </div>
     </footer>
     <script src="js/map.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
