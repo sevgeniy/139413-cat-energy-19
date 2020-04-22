@@ -1,19 +1,15 @@
 .advantages {
+  @include add-side-paddings();
   padding-top: 29px;
-  padding-left: $mobile-padding;
-  padding-right: $mobile-padding;
   padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
-    padding-left: $tablet-padding;
-    padding-right: $tablet-padding;
+    padding-top: 58px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 79px;
-    padding-left: $desktop-padding;
-    padding-right: $desktop-padding;
   }
 }
 
@@ -21,7 +17,7 @@
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    margin-bottom: 84px;
     font-size: 60px;
   }
 }
@@ -50,10 +46,10 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: calc(50% - 60px);
     min-height: 228px;
+    padding-top: 114px;
     margin-bottom: 90px;
-    padding-top: 117px;
     padding-left: 0;
   }
 
@@ -79,6 +75,12 @@
       width: 80px;
       height: 80px;
       background-size: 80px auto;
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 53px;
     }
   }
 
@@ -115,17 +117,17 @@
   }
 
   &::after {
-    position: absolute;
-    top: 90px;
-    left: 125px;
     display: none;
-    font-family: $header-font-family;
-    font-size: 281px;
-    color: $light-grey;
-    z-index: -1;
 
     @media (min-width: $tablet-width) {
       display: block;
+      position: absolute;
+      top: 90px;
+      left: 115px;
+      font-family: $header-font-family;
+      font-size: 281px;
+      color: $light-grey;
+      z-index: -1;
     }
   }
 

@@ -3,6 +3,7 @@
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 60px;
     border-top: 1px solid $light-grey;
     background-color: $white;
   }
@@ -18,6 +19,7 @@
   @include add-side-paddings();
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 78px;
     font-size: 60px;
   }
 }
@@ -49,19 +51,24 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 74px;
     background-color: $light-grey;
   }
 }
 
 .example__description {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .example__description-facts {
   @include add-side-paddings($desktop-padding-right: 0);
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 233px;
+    padding-bottom: 224px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +98,7 @@
 
   &:first-child {
     @media (min-width: $tablet-width) {
-      margin-right: 20px;
+      margin-right: 41px;
     }
   }
 }
@@ -150,6 +157,7 @@
 }
 
 .example__costs {
+  display: flex;
   margin-top: 0;
   margin-bottom: 33px;
   text-align: center;
@@ -161,7 +169,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
     font-size: 20px;
+  }
+}
+
+.example__cost,
+.example__price {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
   }
 }
 
@@ -172,7 +189,8 @@
 
   @media (min-width: $tablet-width) {
     width: 690px;
-    margin-top: -200px;
+    margin-top: -169px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {

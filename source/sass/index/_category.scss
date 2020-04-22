@@ -12,8 +12,11 @@ $link-color: #111111;
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
     padding: 60px 55px;
+    padding-left: 52px;
     padding-right: 275px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +45,8 @@ $link-color: #111111;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-bottom: 2px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -64,7 +69,7 @@ $link-color: #111111;
     @media (min-width: $tablet-width) {
       left: auto;
       top: 92px;
-      right: 55px;
+      right: 62px;
       width: 200px;
       height: 200px;
       border-radius: 100px;
@@ -144,6 +149,7 @@ $link-color: #111111;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
     border: none;
   }
 }
@@ -173,4 +179,10 @@ $link-color: #111111;
 .category__link-arrow-icon {
   margin-left: 8px;
   fill: $header-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
 }

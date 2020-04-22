@@ -14,15 +14,35 @@
 
 .social__item {
   &:nth-child(1) {
-    margin-left: 73px;
+    @media (min-width: $mobile-width) {
+      margin-left: 73px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      margin-right: 28px;
+    }
   }
 
   &:nth-child(2) {
-    margin-left: 38px;
+    @media (min-width: $mobile-width) {
+      margin-left: 38px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      margin-right: 29px;
+    }
   }
 
   &:nth-child(3) {
-    margin-left: 40px;
+    @media (min-width: $mobile-width) {
+      margin-left: 40px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+    }
   }
 }
 

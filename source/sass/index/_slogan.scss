@@ -20,14 +20,14 @@ $color: #ffffff;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 62px;
+    padding-top: 38px;
     padding-right: $tablet-padding;
-    padding-bottom: 539px;
+    padding-bottom: 536px;
     padding-left: $tablet-padding + 90px;
     text-align: left;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-size: 709px auto;
-    background-position: center 259px;
+    background-position: center 239px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
@@ -54,7 +54,7 @@ $color: #ffffff;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     color: $header-color;
