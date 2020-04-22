@@ -7,6 +7,7 @@ $footer-border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  padding-top: 3px;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
 
@@ -28,7 +29,7 @@ $footer-border-bottom: 1px solid #d9d9d9;
   margin: 0;
   text-align: center;
   padding-top: 39px;
-  padding-bottom: 31px;
+  padding-bottom: 26px;
   border-bottom: $footer-border-bottom;
 
   // TODO: probably should style it using class😉

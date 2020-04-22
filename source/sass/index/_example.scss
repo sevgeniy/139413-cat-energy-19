@@ -1,5 +1,5 @@
 .example {
-  padding-top: 32px;
+  padding-top: 29px;
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
@@ -53,6 +53,10 @@
   }
 }
 
+.example__description {
+  margin-bottom: 24px;
+}
+
 .example__description-facts {
   @include add-side-paddings($desktop-padding-right: 0);
 
@@ -72,11 +76,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 }
 
 .example__fact {
-  width: 122px;
+  width: calc(50% - 16px);
   position: relative;
   margin: 0;
   padding: 0;
@@ -146,13 +150,15 @@
 }
 
 .example__costs {
+  margin-top: 0;
+  margin-bottom: 33px;
   text-align: center;
   font-family: $header-font-family;
+  font-size: 14px;
   line-height: 20px;
   font-weight: normal;
   color: $header-color;
   text-transform: uppercase;
-  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -162,7 +168,7 @@
 .example__image {
   width: 320px;
   height: auto;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     width: 690px;

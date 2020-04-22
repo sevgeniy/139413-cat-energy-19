@@ -14,7 +14,7 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
   padding-bottom: 26px;
@@ -38,6 +38,10 @@
     background-color: $white;
     z-index: 1;
   }
+}
+
+.page--index .contacts__wrapper {
+  background-color: $white;
 }
 
 .contacts__title {
@@ -70,7 +74,7 @@
 
 .contacts__yandex-map-container {
   width: 320px;
-  height: 400px;
+  height: 360px;
 
   @media (min-width: $tablet-width) {
     width: 768px;

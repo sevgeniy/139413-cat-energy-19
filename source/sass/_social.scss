@@ -5,7 +5,7 @@
 
 .social__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -13,8 +13,12 @@
 }
 
 .social__item {
+  &:nth-child(1) {
+    margin-left: 73px;
+  }
+
   &:nth-child(2) {
-    margin-left: 37px;
+    margin-left: 38px;
   }
 
   &:nth-child(3) {

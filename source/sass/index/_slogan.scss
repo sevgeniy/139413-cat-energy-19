@@ -4,7 +4,7 @@
 $color: #ffffff;
 
 .slogan {
-  padding-top: 30px;
+  padding-top: 27px;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
   padding-bottom: 22px;
@@ -51,7 +51,7 @@ $color: #ffffff;
 
 .slogan__title {
   color: $color;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
@@ -62,7 +62,7 @@ $color: #ffffff;
 }
 
 .slogan__description {
-  margin-bottom: 300px;
+  margin-bottom: 303px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;

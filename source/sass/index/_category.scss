@@ -8,7 +8,7 @@ $link-color: #111111;
   padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 19px;
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
@@ -34,9 +34,9 @@ $link-color: #111111;
 
 .category__title {
   margin-bottom: 25px;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-bottom: 12px;
-  padding-left: 77px;
+  padding-left: 71px;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -139,7 +139,7 @@ $link-color: #111111;
 
 .category__description {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
 
@@ -171,6 +171,6 @@ $link-color: #111111;
 }
 
 .category__link-arrow-icon {
-  margin-left: 14px;
+  margin-left: 8px;
   fill: $header-color;
 }
