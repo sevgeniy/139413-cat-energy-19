@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Функциональное питание для котов</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=633e05e9-02f6-4aa4-95df-a0aefd4e8ceb
+    &lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body class="page page--index">
     <header class="page-header">
@@ -196,21 +201,24 @@
             Санкт-Петербург
           </p>
         </div>
-        <div class="contacts__map-container">
-          <div class="contacts__map-pin">Место на карте</div>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" />
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" />
-            <img
-              class="contacts__map"
-              src="img/bg-map-mobile@1x.png"
-              srcset="img/bg-map-mobile@2x.png 2x"
-              alt="Карта"
-              width="320"
-              height="362"
-            />
-          </picture>
-        </div>
+        <noscript>
+          <div class="contacts__map-container">
+            <div class="contacts__map-pin">Место на карте</div>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" />
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" />
+              <img
+                class="contacts__map"
+                src="img/bg-map-mobile@1x.png"
+                srcset="img/bg-map-mobile@2x.png 2x"
+                alt="Карта"
+                width="320"
+                height="362"
+              />
+            </picture>
+          </div>
+        </noscript>
+        <div id="map" class="contacts__yandex-map-container contacts__yandex-map-container--no-js"></div>
       </section>
     </main>
     <footer class="page-footer">
@@ -376,5 +384,6 @@ z"
         </a>
       </div>
     </footer>
+    <script src="js/map.js"></script>
   </body>
 </html>
