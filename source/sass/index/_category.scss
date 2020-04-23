@@ -8,12 +8,15 @@ $link-color: #111111;
   padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 19px;
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
     padding: 60px 55px;
+    padding-left: 52px;
     padding-right: 275px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,9 +24,10 @@ $link-color: #111111;
     margin-bottom: 0;
     padding-left: 52px;
     padding-right: 52px;
+    padding-bottom: 34px;
   }
 
-  &:last-child {
+  &:nth-child(2) {
     margin-bottom: 0;
 
     @media (min-width: $desktop-width) {
@@ -34,28 +38,40 @@ $link-color: #111111;
 
 .category__title {
   margin-bottom: 25px;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-bottom: 12px;
+  padding-left: 71px;
   font-size: 24px;
-  line-height: 37px;
-  text-align: center;
+  line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-bottom: 2px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+    padding-left: 162px;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 24px;
+    left: 20px;
     display: block;
     width: 50px;
     height: 50px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border: 1px solid black;
     border-radius: 25px;
+    background-color: $green;
 
     @media (min-width: $tablet-width) {
-      top: 50px;
-      right: 20px;
+      left: auto;
+      top: 92px;
+      right: 62px;
       width: 200px;
       height: 200px;
       border-radius: 100px;
@@ -63,6 +79,7 @@ $link-color: #111111;
 
     @media (min-width: $desktop-width) {
       top: 47px;
+      right: auto;
       left: 52px;
       width: 100px;
       height: 100px;
@@ -70,32 +87,77 @@ $link-color: #111111;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    text-align: left;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
-  @media (min-width: $desktop-width) {
-    text-align: center;
+  &--slim::after {
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../../img/icon-cat-slim.svg");
+
+    @media (min-width: $tablet-width) {
+      left: auto;
+      top: 80px;
+      right: 92px;
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      right: auto;
+      left: 66px;
+      width: 70px;
+      height: 97px;
+    }
   }
-}
 
-.category__title-slim::before {
-  background-image: url("../../img/icon-cat-slim.svg");
-}
+  &--pro::after {
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../img/icon-cat-pro.svg");
 
-.category__title-pro::before {
-  background-image: url("../../img/icon-cat-pro.svg");
+    @media (min-width: $tablet-width) {
+      top: 135px;
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 69px;
+      left: 34px;
+      right: auto;
+      width: 134px;
+      height: 56px;
+    }
+  }
 }
 
 .category__description {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -111,9 +173,23 @@ $link-color: #111111;
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+
+    .category__link-arrow-icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 .category__link-arrow-icon {
-  margin-left: 14px;
+  margin-left: 8px;
   fill: $header-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
 }

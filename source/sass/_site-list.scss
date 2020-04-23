@@ -27,7 +27,7 @@ $border: 1px solid #e6e6e6;
   border-top: $border;
 
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
+    padding-top: 20px;
     padding-bottom: 22px;
     font-size: 18px;
     border-top: none;
@@ -54,10 +54,30 @@ $border: 1px solid #e6e6e6;
   @media (min-width: $desktop-width) {
     color: $header-color;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    padding-bottom: 7px;
+    border-bottom: 2px solid $green;
+  }
 }
 
 .page--index .site-list__link {
   @media (min-width: $desktop-width) {
     color: $white;
+  }
+
+  &--active {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 7px;
+      border-bottom: 2px solid $white;
+    }
   }
 }

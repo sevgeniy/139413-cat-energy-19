@@ -4,23 +4,22 @@
 $footer-border-bottom: 1px solid #d9d9d9;
 
 .page-footer {
+  @include add-side-paddings();
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding-left: $mobile-padding;
-  padding-right: $mobile-padding;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: $tablet-padding;
-    padding-right: $tablet-padding;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: $desktop-padding;
-    padding-right: $desktop-padding;
+    padding-top: 25px;
+    padding-bottom: 29px;
   }
 }
 
@@ -28,16 +27,32 @@ $footer-border-bottom: 1px solid #d9d9d9;
   margin: 0;
   text-align: center;
   padding-top: 39px;
-  padding-bottom: 31px;
+  padding-bottom: 26px;
   border-bottom: $footer-border-bottom;
 
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+
   // TODO: probably should style it using class😉
-  g {
+  .page-footer__logo-group {
     fill: $black;
+  }
+
+  &:hover {
+    .page-footer__logo-group {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    .page-footer__logo-group {
+      opacity: 0.6;
+    }
   }
 }
 
-.page-footer__catenergy {
+.page-footer__cat-energy {
   width: 128px;
   height: 24px;
 }
@@ -48,6 +63,7 @@ $footer-border-bottom: 1px solid #d9d9d9;
   border-bottom: $footer-border-bottom;
 
   @media (min-width: $tablet-width) {
+    margin-left: 25px;
     border: none;
   }
 }
@@ -55,6 +71,29 @@ $footer-border-bottom: 1px solid #d9d9d9;
 .page-footer__copyright {
   padding-top: 22px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
+  }
+}
+
+.social__link {
+  &:hover {
+    & .social__logo {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    & .social__logo {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__vk {
@@ -84,5 +123,37 @@ $footer-border-bottom: 1px solid #d9d9d9;
   @media (min-width: $tablet-width) {
     width: 14px;
     height: 28px;
+  }
+}
+
+.copyright__text {
+  color: $grey;
+
+  &:hover {
+    color: $grey;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  .copyright__logo-path {
+    fill: $copyright-color;
+  }
+
+  &:hover {
+    .copyright__logo-path {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    .copyright__logo-path {
+      fill: $green;
+      opacity: 0.3;
+    }
   }
 }

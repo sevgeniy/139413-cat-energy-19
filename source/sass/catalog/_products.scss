@@ -88,11 +88,20 @@
 
 .products__all-btn {
   color: $header-color;
-  background-color: #f2f2f2;
+  background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     font-size: 16px;
     color: $grey;
+  }
+
+  &:hover {
+    background-color: $dark-grey;
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+    background-color: $dark-grey;
   }
 }

@@ -1,27 +1,31 @@
 .contacts {
   line-height: 0;
 
-  &--bg-color-grey {
-    background-color: #f2f2f2;
+  @media (min-width: $tablet-width) {
+    background-color: $light-grey;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    background-color: $white;
   }
 }
 
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
   padding-bottom: 26px;
   line-height: 20px;
+  background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
-    padding-left: 65px;
+    padding-top: 66px;
     padding-right: 65px;
+    padding-bottom: 66px;
+    padding-left: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,9 +36,14 @@
     width: 570px;
     height: 201px;
     padding-left: 76px;
-    padding-right: 76px;
+    padding-right: 90px;
     background-color: $white;
+    z-index: 1;
   }
+}
+
+.page--index .contacts__wrapper {
+  background-color: $white;
 }
 
 .contacts__title {
@@ -61,17 +70,64 @@
   }
 }
 
-.contacts__map {
+.contacts__map-container {
+  position: relative;
+}
+
+.contacts__yandex-map-container {
   width: 320px;
-  height: 362px;
+  height: 360px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    height: 546px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 400px;
+  }
+
+  &--no-js {
+    display: none;
+  }
+}
+
+.contacts__map {
+  width: 320px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 767px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 139px;
+  left: 136px;
+  width: 55px;
+  height: 53px;
+  font-size: 0;
+  background-image: url("../img/map-pin.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 55px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+    background-size: 113px auto;
+    top: 146px;
+    left: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 150px;
+    left: 1009px;
   }
 }
