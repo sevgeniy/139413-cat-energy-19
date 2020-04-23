@@ -63,8 +63,8 @@
 
 .products__more-label {
   display: block;
-  margin-top: 26px;
-  margin-bottom: 12px;
+  margin-top: 20px;
+  margin-bottom: 7px;
   font-family: $header-font-family;
   font-size: 16px;
   line-height: 20px;
@@ -87,12 +87,12 @@
 }
 
 .products__all-btn {
+  font-size: 16px;
   color: $header-color;
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    font-size: 16px;
     color: $grey;
   }
 

@@ -56,6 +56,21 @@
   }
 }
 
+.product__picture {
+  max-width: 140px;
+  max-height: 144px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    max-height: 208px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    max-height: 208px;
+  }
+}
+
 .product__image {
   align-self: center;
   width: 140px;
@@ -83,29 +98,33 @@
   }
 }
 
+.product__descr {
+  padding-top: 5px;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+
 .product__title {
+  max-width: 90px;
+  margin-bottom: 11px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 0;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-  }
-}
-
-.product__descr {
-  flex-grow: 1;
-
-  @media (min-width: $tablet-padding) {
-    padding-left: $tablet-padding;
-    padding-right: $tablet-padding;
-  }
-
-  @media (min-width: $desktop-padding) {
-    padding-left: 38px;
-    padding-right: 38px;
   }
 }
 
@@ -143,12 +162,13 @@
 }
 
 .product__buy-btn {
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     // TODO: why sass variables can't be used in calc functions? ❓
     width: calc(100% - 60px);
     padding-top: 13px;
     padding-bottom: 13px;
-    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
