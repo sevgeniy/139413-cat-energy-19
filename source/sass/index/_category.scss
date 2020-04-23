@@ -24,6 +24,7 @@ $link-color: #111111;
     margin-bottom: 0;
     padding-left: 52px;
     padding-right: 52px;
+    padding-bottom: 34px;
   }
 
   &:nth-child(2) {
@@ -52,7 +53,8 @@ $link-color: #111111;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    margin-bottom: 75px;
+    padding-left: 162px;
   }
 
   &::before {
@@ -151,6 +153,11 @@ $link-color: #111111;
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding-bottom: 0;
   }
 }
 

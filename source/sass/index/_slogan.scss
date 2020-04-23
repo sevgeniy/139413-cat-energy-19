@@ -35,16 +35,16 @@ $color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 113px;
+    padding-top: 90px;
     padding-right: $desktop-padding;
-    padding-bottom: 387px;
+    padding-bottom: 270px;
     padding-left: $desktop-padding + 83px;
-    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
-    background-size: 552px auto, 720px auto;
-    background-position: center 200px, right -104px;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/my/index-background-desktop@1x.jpg");
+    background-size: 552px auto, 680px auto;
+    background-position: calc(50% + 116px) 11px, right -132px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-can-desktop@2x.png"), url("../img/my/index-background-desktop@2x.jpg");
     }
   }
 }

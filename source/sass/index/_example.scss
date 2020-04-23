@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 4px;
     border: none;
   }
 }
@@ -21,6 +22,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 78px;
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }
 
@@ -62,6 +67,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__description-facts {
@@ -84,6 +94,10 @@
   padding: 0;
   list-style: none;
   margin-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .example__fact {
@@ -173,12 +187,22 @@
     align-items: flex-end;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .example__cost,
 .example__price {
   @media (min-width: $tablet-width) {
     margin-top: 10px;
+  }
+}
+
+.example__price {
+  @media (min-width: $desktop-width) {
+    margin-left: 65px;
   }
 }
 
@@ -194,7 +218,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 690px;
+    margin-top: -188px;
+    margin-bottom: 30px;
   }
 }
 
