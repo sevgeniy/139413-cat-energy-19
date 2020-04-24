@@ -4,7 +4,7 @@
 }
 
 .form__title {
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -128,7 +128,7 @@
 }
 
 .form__email-and-tel {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
@@ -153,6 +153,15 @@
   }
 }
 
+.form__label {
+  margin-right: 15px;
+
+  &--email,
+  &--phone {
+    margin-right: 10px;
+  }
+}
+
 .input-container--email,
 .input-container--tel {
   @media (min-width: $desktop-width) {
@@ -162,9 +171,9 @@
 
 .form__fieldset-legend {
   position: relative;
-  margin-bottom: 30px;
-  font-size: 20px;
-  line-height: 20px;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 24px;
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
@@ -193,7 +202,7 @@
 
 .form__comments {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
@@ -230,7 +239,8 @@
 }
 
 .form__submit-btn {
-  margin-bottom: 23px;
+  font-size: 16px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -245,7 +255,7 @@
 .form__subtitles {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   text-align: center;
   line-height: 16px;
 
@@ -264,7 +274,7 @@
 }
 
 .form__cats-data {
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 79px;
@@ -337,6 +347,7 @@
     display: block;
     width: 100vw;
     left: -20px;
+    margin-top: 20px;
     border-top: 1px solid $light-grey;
 
     @media (min-width: $tablet-width) {
@@ -358,7 +369,7 @@
 }
 
 .form__cats-data-legend {
-  max-width: 155px;
+  max-width: 185px;
 
   @media (min-width: $tablet-width) {
     max-width: none;
