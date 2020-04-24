@@ -9,6 +9,8 @@
   border-top: 1px solid $light-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 36px;
     font-size: 60px;
 
     border-top: none;

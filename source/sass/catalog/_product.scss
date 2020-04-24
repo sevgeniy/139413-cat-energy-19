@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin-top: 140px;
     padding-left: 0;
+    padding-bottom: 40px;
     padding-right: 0;
     border-bottom: none;
     background-color: $light-grey;
@@ -53,6 +54,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: stretch;
+    margin-bottom: 5px;
   }
 }
 
@@ -65,7 +67,7 @@
     max-height: 208px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     max-width: 245px;
     max-height: 208px;
   }
@@ -103,8 +105,9 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    padding-left: $tablet-padding;
-    padding-right: $tablet-padding;
+    padding-top: 31px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,10 +124,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    max-width: 0;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-bottom: 28px;
     font-size: 20px;
     line-height: 20px;
-    text-align: center;
   }
 }
 
@@ -145,6 +149,8 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    padding-top: 3px;
+    padding-bottom: 7px;
     border-bottom: 1px solid $grey;
   }
 }
@@ -166,13 +172,8 @@
 
   @media (min-width: $tablet-width) {
     // TODO: why sass variables can't be used in calc functions? ❓
-    width: calc(100% - 60px);
-    padding-top: 13px;
-    padding-bottom: 13px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // TODO: why sass variables can't be used in calc functions? ❓
     width: calc(100% - 76px);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
