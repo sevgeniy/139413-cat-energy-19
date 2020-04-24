@@ -16,8 +16,8 @@
 
 .extra__title {
   position: relative;
-  margin-top: 31px;
-  margin-bottom: 31px;
+  margin-top: 28px;
+  margin-bottom: 33px;
   font-size: 24px;
   line-height: 24px;
   background-color: $white;
@@ -56,6 +56,8 @@
 }
 
 .extra__list {
+  margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
     padding-left: 0;
@@ -72,6 +74,7 @@
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -101,8 +104,6 @@
   }
 
   &:last-child {
-    border-bottom: none;
-
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid #e6e6e6;
     }
@@ -121,6 +122,10 @@
 }
 
 .extra__info {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 14px;
+
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 0;
@@ -136,8 +141,8 @@
 
 .extra__item-title {
   max-width: 100%;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 6px;
+  margin-bottom: 9px;
 }
 
 .extra__content {
@@ -147,7 +152,7 @@
 }
 
 .extra__promo {
-  padding-top: 190px;
+  padding-top: 187px;
   padding-bottom: 48px;
   background-color: #68b738;
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
@@ -201,6 +206,7 @@
 
 .extra__buy-btn {
   width: 100%;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     padding-top: 13px;
