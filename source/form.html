@@ -174,7 +174,7 @@
         <div class="form__legend-container">
           <legend class="header form__fieldset-legend">Комментарий</legend>
         </div>
-        <section class="form__section">
+        <section class="form__section form__comments-section">
           <textarea
             class="form__comments text-input"
             name="comments"
@@ -187,23 +187,25 @@
         <div class="form__legend-container">
           <legend class="header form__fieldset-legend">Дополнительно</legend>
         </div>
-        <section class="form__section form__additional-products">
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="sugar-replacer" />
-            <label class="label label--checkbox" for="sugar-replacer">Сахарозаменитель</label>
-          </div>
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="water" />
-            <label class="label label--checkbox" for="water">Питьевая вода</label>
-          </div>
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="milk" />
-            <label class="label label--checkbox" for="milk">Молоко</label>
-          </div>
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="vitamins" />
-            <label class="label label--checkbox" for="vitamins">Витамины</label>
-          </div>
+        <section class="form__section form__additional-section">
+          <ul class="form__additional-products">
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="sugar-replacer" />
+              <label class="label label--checkbox" for="sugar-replacer">Сахарозаменитель</label>
+            </li>
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="water" />
+              <label class="label label--checkbox" for="water">Питьевая вода</label>
+            </li>
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="milk" />
+              <label class="label label--checkbox" for="milk">Молоко</label>
+            </li>
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="vitamins" />
+              <label class="label label--checkbox" for="vitamins">Витамины</label>
+            </li>
+          </ul>
         </section>
         <div class="form__submit-and-subtitles">
           <button class="btn form__submit-btn" type="submit">Отправить заявку</button>

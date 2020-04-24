@@ -9,6 +9,14 @@
   border-style: solid;
   border-color: $input-border-color;
 
+  @media (min-width: $tablet-width) {
+    // margin-right: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &::placeholder {
     text-transform: uppercase;
   }

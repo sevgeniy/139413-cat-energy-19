@@ -10,6 +10,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -21,17 +22,24 @@
   border: none;
 }
 
+.form__additional-section {
+  margin-right: 35px;
+}
+
 .form__additional-products {
-  margin-bottom: 34px;
+  margin-top: 36px;
+  margin-bottom: 30px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 22px;
+    margin-top: 56px;
+    margin-bottom: 23px;
   }
 
-  @media (min-width: $desktop-padding) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 29px;
   }
 
@@ -62,6 +70,12 @@
     @media (min-width: $desktop-width) {
       margin-right: 0;
     }
+  }
+}
+
+.form__additional-product {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
@@ -128,10 +142,13 @@
 }
 
 .form__email-and-tel {
+  margin-top: 34px;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    margin-top: 76px;
+    margin-bottom: 65px;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,9 +173,17 @@
 .form__label {
   margin-right: 15px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 17px;
+  }
+
   &--email,
   &--phone {
     margin-right: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -171,14 +196,12 @@
 
 .form__fieldset-legend {
   position: relative;
-  margin-bottom: 35px;
   font-size: 24px;
   line-height: 24px;
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
-    margin-bottom: 70px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -200,15 +223,24 @@
   }
 }
 
+.form__comments-section {
+  @media (min-width: $tablet-width) {
+    padding-right: 35px;
+  }
+}
+
 .form__comments {
   width: 100%;
+  margin-top: 36px;
   margin-bottom: 21px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    height: 175px;
+    margin-top: 76px;
+    margin-bottom: 57px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -220,6 +252,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 72px;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -243,6 +276,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     margin-bottom: 0;
     margin-right: 60px;
   }
@@ -298,6 +332,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
+    padding-right: 37px;
   }
 
   @media (min-width: $desktop-width) {
