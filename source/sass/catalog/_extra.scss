@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+  }
 }
 
 .extra__title-container {
@@ -93,8 +97,9 @@
     align-items: center;
     max-width: none;
     margin-right: 0;
-    padding-left: 0;
     padding-right: 0;
+    padding-bottom: 1px;
+    padding-left: 0;
     border-left: none;
     border-right: none;
   }
@@ -133,6 +138,8 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 0;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   // TODO: fix this cascad 🚨
@@ -190,7 +197,7 @@
   @media (min-width: $desktop-width) {
     min-width: 245px;
     height: 289px;
-    padding-top: 190px;
+    padding-top: 187px;
     padding-left: 37px;
     padding-right: 37px;
     box-sizing: border-box;
@@ -228,6 +235,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 245px;
+    margin-top: -27px;
     margin-left: 40px;
   }
 }
