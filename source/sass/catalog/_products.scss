@@ -57,14 +57,27 @@
 .products__more-icon {
   width: 30px;
   height: 30px;
+  fill: #d3d3d3;
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
   }
+}
 
-  polygon {
-    fill: #d3d3d3;
+.products__mobile-plus {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.products__plus {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
