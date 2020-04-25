@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Каталог продукции</title>
     <script
+      src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"
+      type="text/javascript"
+    ></script>
+    <script
       src="https://api-maps.yandex.ru/2.1/?apikey=633e05e9-02f6-4aa4-95df-a0aefd4e8ceb
     &lang=ru_RU"
       type="text/javascript"
@@ -78,9 +82,9 @@
         <ul class="products__list">
           <li class="product">
             <div class="product__wrapper">
-              <picture>
+              <picture class="product__picture">
                 <source
-                  media="(min-width: 1444px)"
+                  media="(min-width: 1440px)"
                   srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x"
                 />
                 <source
@@ -98,8 +102,7 @@
               </picture>
               <div class="product__descr">
                 <h2 class="header product__title">
-                  Cat Energy Pro<br />
-                  500 г
+                  Cat Energy Pro 500 Г
                 </h2>
                 <table class="product__info">
                   <tr class="product__info-row">
@@ -121,9 +124,9 @@
           </li>
           <li class="product">
             <div class="product__wrapper">
-              <picture>
+              <picture class="product__picture">
                 <source
-                  media="(min-width: 1444px)"
+                  media="(min-width: 1440px)"
                   srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x"
                 />
                 <source
@@ -141,8 +144,7 @@
               </picture>
               <div class="product__descr">
                 <h2 class="header product__title">
-                  Cat Energy Pro<br />
-                  1000 г
+                  Cat Energy Pro 1000 Г
                 </h2>
                 <table class="product__info">
                   <tr class="product__info-row">
@@ -164,9 +166,9 @@
           </li>
           <li class="product">
             <div class="product__wrapper">
-              <picture>
+              <picture class="product__picture">
                 <source
-                  media="(min-width: 1444px)"
+                  media="(min-width: 1440px)"
                   srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x"
                 />
                 <source
@@ -184,8 +186,7 @@
               </picture>
               <div class="product__descr">
                 <h2 class="header product__title">
-                  Cat Energy Pro<br />
-                  500 г
+                  Cat Energy Pro 500 Г
                 </h2>
                 <table class="product__info">
                   <tr class="product__info-row">
@@ -207,9 +208,9 @@
           </li>
           <li class="product">
             <div class="product__wrapper">
-              <picture>
+              <picture class="product__picture">
                 <source
-                  media="(min-width: 1444px)"
+                  media="(min-width: 1440px)"
                   srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x"
                 />
                 <source
@@ -227,8 +228,7 @@
               </picture>
               <div class="product__descr">
                 <h2 class="header product__title">
-                  Cat Energy Pro<br />
-                  1000 г
+                  Cat Energy Pro 1000 Г
                 </h2>
                 <table class="product__info">
                   <tr class="product__info-row">
@@ -250,9 +250,9 @@
           </li>
           <li class="product">
             <div class="product__wrapper">
-              <picture>
+              <picture class="product__picture">
                 <source
-                  media="(min-width: 1444px)"
+                  media="(min-width: 1440px)"
                   srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x"
                 />
                 <source
@@ -270,8 +270,7 @@
               </picture>
               <div class="product__descr">
                 <h2 class="header product__title">
-                  Cat Energy Slim<br />
-                  500 г
+                  Cat Energy Slim 500 Г
                 </h2>
                 <table class="product__info">
                   <tr class="product__info-row">
@@ -293,9 +292,9 @@
           </li>
           <li class="product">
             <div class="product__wrapper">
-              <picture>
+              <picture class="product__picture">
                 <source
-                  media="(min-width: 1444px)"
+                  media="(min-width: 1440px)"
                   srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x"
                 />
                 <source
@@ -313,8 +312,7 @@
               </picture>
               <div class="product__descr">
                 <h2 class="header product__title">
-                  Cat Energy Slim<br />
-                  1000 г
+                  Cat Energy Slim 1000 Г
                 </h2>
                 <table class="product__info">
                   <tr class="product__info-row">
@@ -336,9 +334,9 @@
           </li>
           <li class="product">
             <div class="product__wrapper">
-              <picture>
+              <picture class="product__picture">
                 <source
-                  media="(min-width: 1444px)"
+                  media="(min-width: 1440px)"
                   srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x"
                 />
                 <source
@@ -356,8 +354,7 @@
               </picture>
               <div class="product__descr">
                 <h2 class="header product__title">
-                  Cat Energy Slim<br />
-                  500 г
+                  Cat Energy Slim 500 Г
                 </h2>
                 <table class="product__info">
                   <tr class="product__info-row">
@@ -413,7 +410,7 @@
                 <h3 class="header extra__item-title product__title">Сахарозаменитель</h3>
                 <table class="extra__info product__info">
                   <tr>
-                    <td class="product__property">1 упаковка</td>
+                    <td class="product__property">1 Упаковка</td>
                     <td class="product__value product__value--price">100 р.</td>
                   </tr>
                 </table>
@@ -467,7 +464,7 @@
           <h2 class="header contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__address">
             ул. Большая<br />
-            Конюшенная, д. 19/8<br /><br />
+            Конюшенная, д. 19/8<br />
             Санкт-Петербург
           </p>
         </div>

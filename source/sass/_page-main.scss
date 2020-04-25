@@ -3,21 +3,28 @@
 }
 
 .page-main__title {
-  padding-top: 31px;
-  padding-left: $mobile-padding;
-  padding-right: $mobile-padding;
-  padding-bottom: 36px;
+  @include add-side-paddings();
+  padding-top: 27px;
+  padding-bottom: 40px;
   border-top: 1px solid $light-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 36px;
     font-size: 60px;
-    padding-left: $tablet-padding;
-    padding-right: $tablet-padding;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: $desktop-padding;
-    padding-right: $desktop-padding;
+    padding-top: 68px;
+  }
+
+  // TODO: should refactor this
+  &--form {
+    padding-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 67px;
+    }
   }
 }

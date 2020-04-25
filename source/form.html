@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Подбор программы</title>
     <script
+      src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"
+      type="text/javascript"
+    ></script>
+    <script
       src="https://api-maps.yandex.ru/2.1/?apikey=633e05e9-02f6-4aa4-95df-a0aefd4e8ceb
     &lang=ru_RU"
       type="text/javascript"
@@ -73,7 +77,7 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="header page-main__title">Подбор программы</h1>
+      <h1 class="header page-main__title page-main__title--form">Подбор программы</h1>
       <form action="https://echo.htmlacademy.ru" class="form">
         <h2 class="header form__title">
           Заполните анкету и мы подберём<br />
@@ -82,30 +86,30 @@
         <section class="form__section form__cats-data">
           <section class="form__cat-info">
             <div class="input-container">
-              <label class="label label--required" for="cat-name">Имя: </label>
+              <label class="label form__label label--required" for="cat-name">Имя:</label>
               <input class="text-input" id="cat-name" name="cat-name" type="text" placeholder="БАРСИК" />
             </div>
             <div class="input-container">
-              <label class="label label--required" for="weight">Вес (кг):</label>
+              <label class="label form__label label--required" for="weight">Вес (кг):</label>
               <input class="text-input" id="weight" name="weight" type="text" placeholder="7" />
             </div>
             <div class="input-container">
-              <label class="label" for="age">Возраст (лет):</label>
+              <label class="label form__label" for="age">Возраст (лет):</label>
               <input class="text-input" id="age" name="age" type="text" placeholder="7" />
             </div>
           </section>
           <ul class="form__program-info">
             <li class="input-container">
               <input class="radio visually-hidden" type="radio" name="program" id="diet" />
-              <label class="label label--radio" for="diet">Похудение</label>
+              <label class="label form__label label--radio" for="diet">Похудение</label>
             </li>
             <li class="input-container">
               <input class="radio visually-hidden" type="radio" name="program" id="muscles" />
-              <label class="label label--radio" for="muscles">Набор массы</label>
+              <label class="label form__label label--radio" for="muscles">Набор массы</label>
             </li>
             <li class="input-container">
               <input class="radio visually-hidden" type="radio" name="program" id="advice" />
-              <label class="label label--radio" for="advice">Не знаю (нужен ваш совет)</label>
+              <label class="label form__label label--radio" for="advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </section>
@@ -117,7 +121,7 @@
         <section class="form__section">
           <div class="form__email-and-tel">
             <div class="input-container input-container--email">
-              <label class="label label--required" for="phone">E-Mail:</label>
+              <label class="label form__label--email label--required" for="phone">E-Mail:</label>
               <input class="text-input" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" />
               <svg
                 class="form__email-icon"
@@ -138,7 +142,7 @@
               </svg>
             </div>
             <div class="input-container input-container--tel">
-              <label class="label label--required" for="phone">Телефон:</label>
+              <label class="label form__label--phone label--required" for="phone">Телефон:</label>
               <input class="text-input" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" />
               <svg
                 class="form__tel-icon"
@@ -170,40 +174,42 @@
         <div class="form__legend-container">
           <legend class="header form__fieldset-legend">Комментарий</legend>
         </div>
-        <section class="form__section">
+        <section class="form__section form__comments-section">
           <textarea
             class="form__comments text-input"
             name="comments"
             id="comments"
             cols="30"
-            rows="5"
+            rows="7"
             placeholder="Расскажите обо всех повадках кота"
           ></textarea>
         </section>
         <div class="form__legend-container">
           <legend class="header form__fieldset-legend">Дополнительно</legend>
         </div>
-        <section class="form__section form__additional-products">
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="sugar-replacer" />
-            <label class="label label--checkbox" for="sugar-replacer">Сахарозаменитель</label>
-          </div>
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="water" />
-            <label class="label label--checkbox" for="water">Питьевая вода</label>
-          </div>
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="milk" />
-            <label class="label label--checkbox" for="milk">Молоко</label>
-          </div>
-          <div class="input-container">
-            <input class="checkbox visually-hidden" type="checkbox" name="extra" id="vitamins" />
-            <label class="label label--checkbox" for="vitamins">Витамины</label>
-          </div>
+        <section class="form__section form__additional-section">
+          <ul class="form__additional-products">
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="sugar-replacer" />
+              <label class="label label--checkbox" for="sugar-replacer">Сахарозаменитель</label>
+            </li>
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="water" />
+              <label class="label label--checkbox" for="water">Питьевая вода</label>
+            </li>
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="milk" />
+              <label class="label label--checkbox" for="milk">Молоко</label>
+            </li>
+            <li class="input-container form__additional-product">
+              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="vitamins" />
+              <label class="label label--checkbox" for="vitamins">Витамины</label>
+            </li>
+          </ul>
         </section>
         <div class="form__submit-and-subtitles">
           <button class="btn form__submit-btn" type="submit">Отправить заявку</button>
-          <p class="form__subtitles">* - Обязательные поля</p>
+          <p class="form__subtitles">* &mdash; Обязательные поля</p>
         </div>
       </form>
       <section class="contacts">
@@ -211,7 +217,7 @@
           <h2 class="header contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__address">
             ул. Большая<br />
-            Конюшенная, д. 19/8<br /><br />
+            Конюшенная, д. 19/8<br />
             Санкт-Петербург
           </p>
         </div>

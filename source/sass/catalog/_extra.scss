@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+  }
 }
 
 .extra__title-container {
@@ -16,14 +20,15 @@
 
 .extra__title {
   position: relative;
-  margin-top: 31px;
-  margin-bottom: 31px;
+  margin-top: 28px;
+  margin-bottom: 33px;
   font-size: 24px;
   line-height: 24px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: 350px;
+    margin-bottom: 80px;
     padding-left: 37px;
     font-size: 36px;
     line-height: 36px;
@@ -56,6 +61,8 @@
 }
 
 .extra__list {
+  margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
     padding-left: 0;
@@ -72,12 +79,14 @@
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     padding-top: 27px;
-    padding-left: 37px;
     padding-right: 37px;
+    padding-bottom: 28px;
+    padding-left: 37px;
     background-color: $white;
     border: 1px solid #e6e6e6;
     border-bottom: none;
@@ -88,8 +97,9 @@
     align-items: center;
     max-width: none;
     margin-right: 0;
-    padding-left: 0;
     padding-right: 0;
+    padding-bottom: 1px;
+    padding-left: 0;
     border-left: none;
     border-right: none;
   }
@@ -101,8 +111,6 @@
   }
 
   &:last-child {
-    border-bottom: none;
-
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid #e6e6e6;
     }
@@ -117,13 +125,21 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 17px;
+    padding-top: 0;
   }
 }
 
 .extra__info {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 14px;
+
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 0;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   // TODO: fix this cascad 🚨
@@ -136,8 +152,12 @@
 
 .extra__item-title {
   max-width: 100%;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 6px;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .extra__content {
@@ -147,7 +167,7 @@
 }
 
 .extra__promo {
-  padding-top: 190px;
+  padding-top: 187px;
   padding-bottom: 48px;
   background-color: #68b738;
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
@@ -161,8 +181,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 75px;
-    padding-left: 423px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 298px;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
     background-size: 55px 60px, 708px auto;
     background-position: 91px 65px, center top;
@@ -176,7 +197,7 @@
   @media (min-width: $desktop-width) {
     min-width: 245px;
     height: 289px;
-    padding-top: 190px;
+    padding-top: 187px;
     padding-left: 37px;
     padding-right: 37px;
     box-sizing: border-box;
@@ -197,19 +218,24 @@
   font-size: 16px;
   color: #ffffff;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+  }
 }
 
 .extra__buy-btn {
   width: 100%;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 245px;
+    margin-top: -27px;
     margin-left: 40px;
   }
 }
