@@ -11,6 +11,15 @@
   <symbol viewBox="0 0 24.2 11" id="arrow">
     <polygon points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 "/>
   </symbol>
+  <symbol viewBox="0 0 32 11" id="long-arrow">
+    <polygon points="25.4,0 32,5.5 25.4,11 25.4,6.6 0,6.6 0,4.4 25.4,4.4 "/>
+  </symbol>
+  <symbol viewBox="0 0 30 30" id="mobile-plus">
+    <polygon points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
+  </symbol>
+  <symbol viewBox="0 0 60 60" id="plus">
+    <polygon points="60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5 60,30.5 "/>
+  </symbol>
   <symbol viewBox="0 0 127.8 23.4" id="footer-logo">
     <g>
       <path
