@@ -24,6 +24,10 @@
 
 .form__additional-section {
   margin-right: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .form__additional-products {
@@ -40,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
 
   .input-container {
@@ -154,6 +158,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-start;
+    margin-top: 72px;
+    margin-bottom: 48px;
+    padding-right: 0;
   }
 
   .input-container {
@@ -227,6 +234,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .form__comments {
@@ -256,7 +267,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 82px;
+    padding-right: 0;
   }
 }
 
