@@ -63,8 +63,11 @@ $footer-border-bottom: 1px solid #d9d9d9;
   padding-top: 23px;
   padding-bottom: 21px;
   border-bottom: $footer-border-bottom;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
+    display: block;
     margin-left: 25px;
     border: none;
   }
