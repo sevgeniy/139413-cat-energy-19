@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     flex-grow: 0;
     box-sizing: border-box;
-    width: 245px;
+    width: calc(25% - 60px);
     margin-right: 80px;
     background-color: $light-grey;
   }
@@ -69,6 +69,8 @@
   @media (min-width: $tablet-width) {
     max-width: 324px;
     max-height: 208px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
