@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 47px;
+    margin-bottom: 49px;
     border-left: none;
     border-right: none;
   }
@@ -40,10 +40,12 @@
   border-bottom: $border;
 
   @media (min-width: $tablet-width) {
+    margin-top: 141px;
     padding-top: 54px;
     padding-left: 38px;
     padding-right: 38px;
     background-color: $white;
+    background-image: none;
     border: 1px solid #e6e6e6;
   }
 }
