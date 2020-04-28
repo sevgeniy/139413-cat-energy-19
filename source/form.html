@@ -79,6 +79,7 @@
                 type="text"
                 placeholder="БАРСИК"
                 required
+                autocomplete="off"
               />
             </div>
             <div class="input-container">
@@ -90,11 +91,19 @@
                 type="text"
                 placeholder="7"
                 required
+                autocomplete="off"
               />
             </div>
             <div class="input-container">
               <label class="label form__label" for="age">Возраст (лет):</label>
-              <input class="text-input" id="age" name="age" type="text" placeholder="7" />
+              <input
+                class="text-input"
+                id="age"
+                name="age"
+                type="text"
+                placeholder="7"
+                autocomplete="off"
+              />
             </div>
           </section>
           <ul class="form__program-info">
@@ -130,6 +139,7 @@
                 type="email"
                 placeholder="kuklachev@gmail.com"
                 required
+                autocomplete="off"
               />
               <svg class="form__email-icon" viewBox="0 0 17 13">
                 <use xlink:href="img/sprite.svg#icon-mail" />
@@ -144,6 +154,7 @@
                 type="tel"
                 placeholder="8 (960) 900-60-90"
                 required
+                autocomplete="off"
               />
               <svg class="form__tel-icon" viewBox="0 0 20 20">
                 <use xlink:href="img/sprite.svg#icon-phone" />
@@ -162,6 +173,7 @@
             cols="30"
             rows="7"
             placeholder="Расскажите обо всех повадках кота"
+            autocomplete="off"
           ></textarea>
         </section>
         <div class="form__legend-container">
@@ -298,5 +310,6 @@
     </footer>
     <script src="js/map.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
