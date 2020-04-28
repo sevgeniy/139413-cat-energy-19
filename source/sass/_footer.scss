@@ -7,31 +7,31 @@ $footer-border-bottom: 1px solid #d9d9d9;
   @include add-side-paddings();
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
-  padding-top: 3px;
+  background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 25px;
-    padding-bottom: 29px;
+    padding-top: 53px;
+    padding-bottom: 47px;
   }
 }
 
 .page-footer__logo {
   margin: 0;
   text-align: center;
-  padding-top: 39px;
+  padding-top: 42px;
   padding-bottom: 26px;
   border-bottom: $footer-border-bottom;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 7px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
   }
 
   // TODO: probably should style it using class😉
@@ -69,7 +69,13 @@ $footer-border-bottom: 1px solid #d9d9d9;
   @media (min-width: $tablet-width) {
     display: block;
     margin-left: 25px;
+    padding: 0;
+    padding-top: 3px;
     border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
   }
 }
 
@@ -78,11 +84,12 @@ $footer-border-bottom: 1px solid #d9d9d9;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding: 0;
+    padding-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 29px;
+    padding-top: 0;
   }
 }
 

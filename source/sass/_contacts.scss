@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 66px;
     padding-right: 65px;
-    padding-bottom: 66px;
+    padding-bottom: 58px;
     padding-left: 70px;
   }
 
@@ -67,6 +67,13 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.contacts__address-city {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 17px;
   }
 }
 
