@@ -176,7 +176,7 @@
   padding-bottom: 48px;
   background-color: #68b738;
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 55px 60px, 280px auto;
+  background-size: 55px 60px, cover;
   background-position: center 65px, center top;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
@@ -190,7 +190,7 @@
     padding-bottom: 70px;
     padding-left: 298px;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
-    background-size: 55px 60px, 708px auto;
+    background-size: 55px 60px, cover;
     background-position: 91px 65px, center top;
     text-align: left;
 
@@ -207,7 +207,7 @@
     padding-right: 37px;
     box-sizing: border-box;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
-    background-size: 55px 60px, 245px auto;
+    background-size: 55px 60px, cover;
     background-position: center 65px, center top;
     text-align: center;
 
