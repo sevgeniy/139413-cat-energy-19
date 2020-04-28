@@ -4,20 +4,42 @@
   align-items: center;
 }
 
-.copyright__text {
-  font-size: 16px;
-  line-height: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 23px;
-  }
-}
-
 .copyright__link {
   font-size: 0;
   line-height: 0;
+  text-decoration: none;
+}
+
+.copyright__text {
+  font-size: 16px;
+  line-height: 16px;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 7px;
+  }
+
+  &:hover {
+    color: $grey;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
-  fill: #666666;
+  width: 38px;
+  height: 38px;
+  fill: $copyright-color;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    fill: $green;
+    opacity: 0.3;
+  }
 }
