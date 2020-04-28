@@ -3,9 +3,9 @@ displayYandexMapContainer();
 ymaps.ready(init);
 
 function displayYandexMapContainer() {
-  let yandexMapContainer = document.querySelector(".contacts__yandex-map-container--no-js");
+  let yandexMapContainer = document.querySelector(".contacts__yandex-map--no-js");
   if (yandexMapContainer) {
-    yandexMapContainer.classList.remove("contacts__yandex-map-container--no-js");
+    yandexMapContainer.classList.remove("contacts__yandex-map--no-js");
   }
 }
 

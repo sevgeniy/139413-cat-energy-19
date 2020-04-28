@@ -22,10 +22,19 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-            <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип в хедере" width="191" height="38" />
+            <img
+              class="page-header__logo"
+              src="img/logo-mobile.svg"
+              alt="Логотип в хедере"
+              width="191"
+              height="38"
+            />
           </picture>
         </a>
-        <button class="js-toggle page-header__toggle page-header__toggle--closed page-header__toggle--no-js" href="#">
+        <button
+          class="js-toggle page-header__toggle page-header__toggle--closed page-header__toggle--no-js"
+          href="#"
+        >
           <span class="visually-hidden">Закрыть меню</span>
           <svg class="page-header__close" width="18" height="18">
             <use xlink:href="img/sprite.svg#icon-close" />
@@ -44,7 +53,9 @@
               <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="form.html">Подбор программы</a>
+              <a class="site-list__link site-list__link--active" href="form.html"
+                >Подбор программы</a
+              >
             </li>
           </ul>
         </nav>
@@ -61,11 +72,25 @@
           <section class="form__cat-info">
             <div class="input-container">
               <label class="label form__label label--required" for="cat-name">Имя:</label>
-              <input class="text-input" id="cat-name" name="cat-name" type="text" placeholder="БАРСИК" required />
+              <input
+                class="text-input"
+                id="cat-name"
+                name="cat-name"
+                type="text"
+                placeholder="БАРСИК"
+                required
+              />
             </div>
             <div class="input-container">
               <label class="label form__label label--required" for="weight">Вес (кг):</label>
-              <input class="text-input" id="weight" name="weight" type="text" placeholder="7" required />
+              <input
+                class="text-input"
+                id="weight"
+                name="weight"
+                type="text"
+                placeholder="7"
+                required
+              />
             </div>
             <div class="input-container">
               <label class="label form__label" for="age">Возраст (лет):</label>
@@ -83,7 +108,9 @@
             </li>
             <li class="input-container">
               <input class="radio visually-hidden" type="radio" name="program" id="advice" />
-              <label class="label form__label label--radio" for="advice">Не знаю (нужен ваш совет)</label>
+              <label class="label form__label label--radio" for="advice"
+                >Не знаю (нужен ваш совет)</label
+              >
             </li>
           </ul>
         </section>
@@ -110,7 +137,14 @@
             </div>
             <div class="input-container input-container--tel">
               <label class="label form__label--phone label--required" for="phone">Телефон:</label>
-              <input class="text-input" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required />
+              <input
+                class="text-input"
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="8 (960) 900-60-90"
+                required
+              />
               <svg class="form__tel-icon" viewBox="0 0 20 20">
                 <use xlink:href="img/sprite.svg#icon-phone" />
               </svg>
@@ -136,7 +170,12 @@
         <section class="form__section form__additional-section">
           <ul class="form__additional-products">
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="sugar-replacer" />
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="sugar-replacer"
+              />
               <label class="label label--checkbox" for="sugar-replacer">Сахарозаменитель</label>
             </li>
             <li class="input-container form__additional-product">
@@ -169,33 +208,44 @@
         </div>
         <noscript>
           <div class="contacts__map-container">
-            <div class="contacts__map-pin">Место на карте</div>
-            <picture>
-              <source
-                type="image/webp"
-                media="(min-width: 1440px)"
-                srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x"
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x"
-              />
-              <source type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x" />
-              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" />
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" />
-              <img
-                class="contacts__map"
-                src="img/bg-map-mobile@1x.png"
-                srcset="img/bg-map-mobile@2x.png 2x"
-                alt="Карта"
-                width="320"
-                height="362"
-              />
-            </picture>
+            <div class="contacts__map">
+              <div class="contacts__map-pin">Место на карте</div>
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x"
+                />
+                <img
+                  class="contacts__map-image"
+                  src="img/bg-map-mobile@1x.png"
+                  srcset="img/bg-map-mobile@2x.png 2x"
+                  alt="Карта"
+                  width="320"
+                  height="362"
+                />
+              </picture>
+            </div>
           </div>
         </noscript>
-        <div id="map" class="contacts__yandex-map-container contacts__yandex-map-container--no-js"></div>
+        <div id="map" class="contacts__yandex-map contacts__yandex-map--no-js"></div>
       </section>
     </main>
     <footer class="page-footer">
@@ -215,7 +265,9 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="https://www.instagram.com/htmlacademy/" class="social__link social__link--insta"
+            <a
+              href="https://www.instagram.com/htmlacademy/"
+              class="social__link social__link--insta"
               >Мы в Инстаграме
               <svg class="social__insta">
                 <use class="social__logo" xlink:href="img/sprite.svg#icon-insta" />
