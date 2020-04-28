@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
     border-left: none;
     border-right: none;
   }
@@ -21,6 +21,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
   }
@@ -51,9 +52,16 @@
 }
 
 .products__more-btn {
+  padding: 0;
   font-size: 0;
   line-height: 0;
   text-decoration: none;
+  background-color: $white;
+
+  &:hover,
+  &:active {
+    background-color: $white;
+  }
 }
 
 .products__more-icon {
