@@ -1,4 +1,6 @@
 .form {
+  overflow: hidden;
+
   // TODO: how to use $tablet-padding + 40px; ???
   @include add-side-paddings($tablet-padding-left: 70px);
 }
@@ -329,6 +331,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     margin-bottom: 73px;
+    justify-content: space-between;
   }
 }
 
@@ -349,7 +352,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    margin-right: 80px;
   }
 }
 
@@ -367,6 +369,7 @@
 
   @media (min-width: $desktop-width) {
     border: 1px solid $light-grey;
+    box-sizing: border-box;
   }
 
   &::before {

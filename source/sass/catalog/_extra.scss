@@ -1,5 +1,6 @@
 .extra {
   position: relative;
+  overflow: hidden;
 
   @include add-side-paddings();
 
