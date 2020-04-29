@@ -334,7 +334,7 @@
     background-color: $white;
   }
 
-  &:after {
+  &::after {
     display: none;
 
     @media (min-width: $tablet-width) {
