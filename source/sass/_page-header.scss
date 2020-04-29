@@ -40,7 +40,17 @@
   }
 }
 
-.page-header__logo-link {
+.page--index .page-header__logo-container {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.page-header__logo-container {
   margin-left: $mobile-padding;
 
   @media (min-width: $tablet-width) {
@@ -53,18 +63,6 @@
 
   &:active {
     opacity: 0.6;
-  }
-}
-
-.page--index .page-header__logo-link {
-  cursor: default;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 1;
   }
 }
 
