@@ -174,23 +174,26 @@ $link-color: #111111;
     line-height: 20px;
   }
 
-  &:active {
-    color: rgba(17, 17, 17, 0.3);
-
-    .category__link-arrow-icon {
-      opacity: 0.3;
-    }
-  }
-}
-
-.category__link-arrow-icon {
-  margin-left: 8px;
-  fill: $header-color;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 20px;
-    margin-bottom: 4px;
+  &::after {
+    content: "";
     display: inline-block;
+    position: relative;
+    left: 8px;
+    top: -3px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after,
+  &:hover::after {
+    width: 34px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
