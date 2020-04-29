@@ -178,12 +178,17 @@ $link-color: #111111;
     content: "";
     display: inline-block;
     position: relative;
-    left: 8px;
-    top: -3px;
+    left: 12px;
+    height: -1px;
     width: 24px;
     height: 11px;
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 24px;
+      top: -3px;
+    }
   }
 
   &:active::after,
