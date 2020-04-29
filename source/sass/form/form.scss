@@ -1,7 +1,6 @@
 .form {
   overflow: hidden;
 
-  // TODO: how to use $tablet-padding + 40px; ???
   @include add-side-paddings($tablet-padding-left: 70px);
 }
 
