@@ -56,7 +56,7 @@
 
 .example__before-after {
   @include add-side-paddings(0, 0, $desktop-padding-left: 0);
-  padding-bottom: 38px;
+  padding-bottom: 34px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -81,7 +81,7 @@
   @include add-side-paddings($desktop-padding-right: 0);
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 58px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -221,6 +221,14 @@
   }
 }
 
+.example__picture {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .example__image {
   width: 320px;
   height: auto;
@@ -228,6 +236,7 @@
 
   @media (min-width: $tablet-width) {
     width: 690px;
+    margin-left: 11px;
     margin-bottom: 12px;
   }
 
@@ -244,12 +253,101 @@
   line-height: 20px;
   color: $header-color;
   text-transform: uppercase;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
-.example__before,
-.example__after {
+.example__before-btn,
+.example__after-btn {
+  width: auto;
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  background-color: $light-grey;
+  color: $header-color;
+  font-size: 16px;
+  border-bottom: 1px dotted $header-color;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $light-grey;
+    border: none;
+    border-bottom: 1px dotted $header-color;
+  }
+
+  &:active {
+    background-color: $light-grey;
+    cursor: pointer;
+    border: none;
+    color: $header-color;
+    opacity: 1;
+  }
+}
+
+.example__range {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: $white;
+  border: 1px solid $input-border-color-hover;
+  border-radius: 7px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    background-color: #cdcdcd;
+    border: 1px solid #cdcdcd;
+  }
+}
+
+.example__range-button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 37px;
+  height: 6px;
+  border: 1px solid $green;
+  border-radius: 4px;
+  background-color: $green;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    border: 1px solid #cdcdcd;
+    border-radius: 17px;
+    background-color: $white;
+  }
+
+  &:after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 4px;
+    }
   }
 }

@@ -143,7 +143,7 @@
             </div>
           </div>
           <div class="example__before-after">
-            <picture>
+            <picture class="example__picture example__picture--active">
               <source
                 type="image/webp"
                 media="(min-width: 1440px)"
@@ -175,9 +175,44 @@
                 height="232"
               />
             </picture>
+            <picture class="example__picture">
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x"
+              />
+              <img
+                class="example__image"
+                src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x"
+                alt="Было - стало"
+                width="280"
+                height="232"
+              />
+            </picture>
             <div class="example__image-description">
-              <span class="example__before">Было</span>
-              <span class="example__after">Стало</span>
+              <button class="btn example__before-btn">Было</button>
+              <div class="example__range">
+                <span class="example__range-button"></span>
+              </div>
+              <button class="btn example__after-btn">Стало</button>
             </div>
           </div>
         </div>
