@@ -81,7 +81,7 @@
   @include add-side-paddings($desktop-padding-right: 0);
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 55px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,7 +96,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;
@@ -122,7 +122,7 @@
 
 .example__fact-name {
   padding-top: 16px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   font-family: $header-font-family;
   font-size: 24px;
   line-height: 24px;
@@ -162,7 +162,6 @@
 
   @media (min-width: $tablet-width) {
     bottom: -5px;
-    min-width: 150px;
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
@@ -173,8 +172,21 @@
   }
 }
 
+.example__fact:first-child .example__fact-description {
+  @media (min-width: $tablet-width) {
+    min-width: 110px;
+  }
+}
+
+.example__fact:last-child .example__fact-description {
+  @media (min-width: $tablet-width) {
+    min-width: 140px;
+  }
+}
+
 .example__costs {
   display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 33px;
   text-align: center;
