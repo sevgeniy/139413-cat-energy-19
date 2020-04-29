@@ -143,7 +143,14 @@
             </div>
           </div>
           <div class="example__before-after">
-            <picture class="example__picture example__picture--active">
+            <input
+              class="example__before-radio radio visually-hidden"
+              type="radio"
+              name="before-after"
+              id="before"
+              checked
+            />
+            <picture class="example__picture">
               <source
                 type="image/webp"
                 media="(min-width: 1440px)"
@@ -175,6 +182,12 @@
                 height="232"
               />
             </picture>
+            <input
+              class="example__after-radio radio visually-hidden"
+              type="radio"
+              name="before-after"
+              id="after"
+            />
             <picture class="example__picture">
               <source
                 type="image/webp"
@@ -208,11 +221,11 @@
               />
             </picture>
             <div class="example__image-description">
-              <button class="btn example__before-btn">Было</button>
+              <label for="before" class="example__before-btn">Было</label>
               <div class="example__range">
                 <span class="example__range-button"></span>
               </div>
-              <button class="btn example__after-btn">Стало</button>
+              <label for="after" class="example__after-btn">Стало</label>
             </div>
           </div>
         </div>
