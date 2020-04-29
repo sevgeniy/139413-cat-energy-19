@@ -36,3 +36,53 @@
 .social__logo {
   fill: #666666;
 }
+
+.social__link {
+  &:hover {
+    & .social__logo {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    & .social__logo {
+      fill: $green;
+    }
+
+    & .social__vk,
+    & .social__fb,
+    & .social__insta {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__vk {
+  width: 22px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.social__insta {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__fb {
+  width: 10px;
+  height: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
+}

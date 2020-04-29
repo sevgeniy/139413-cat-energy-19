@@ -98,39 +98,5 @@ gulp.task("server", function () {
   });
 });
 
-gulp.task("cssdev", function () {
-  return (
-    gulp
-      .src("source/sass/style.scss")
-      .pipe(plumber())
-      .pipe(sourcemap.init())
-      .pipe(sass())
-      .pipe(postcss([autoprefixer()]))
-      // .pipe(csso())
-      .pipe(rename("style.min.css"))
-      .pipe(sourcemap.write("."))
-      .pipe(gulp.dest("source/css"))
-      .pipe(server.stream())
-  );
-});
-
-gulp.task("serverdev", function () {
-  server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false,
-  });
-
-  gulp.watch("source/sass/**/*.scss", gulp.series("cssdev"));
-  gulp.watch("source/*.html").on("change", function () {
-    console.log("html change");
-    server.reload();
-  });
-});
-
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
-
-// gulp.task("dev", gulp.series("cssdev", "html"));
-gulp.task("start", gulp.series("cssdev", "serverdev"));
+gulp.task("start", gulp.series("build", "server"));

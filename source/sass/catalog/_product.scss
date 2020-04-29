@@ -50,19 +50,16 @@
 }
 
 .product__picture {
-  max-width: 140px;
-  max-height: 144px;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
-    max-width: 324px;
-    max-height: 208px;
+    width: 324px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 245px;
-    max-height: 208px;
+    width: 245px;
   }
 }
 
