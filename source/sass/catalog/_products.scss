@@ -57,20 +57,7 @@
   }
 }
 
-.products__more-btn {
-  padding: 0;
-  font-size: 0;
-  line-height: 0;
-  text-decoration: none;
-  background-color: $white;
-
-  &:hover,
-  &:active {
-    background-color: $white;
-  }
-}
-
-.products__more-label {
+.products__more-descr {
   display: block;
   margin-top: 54px;
   margin-bottom: 7px;
@@ -92,7 +79,7 @@
   }
 }
 
-.products__all-label {
+.products__all {
   display: block;
   margin-top: 7px;
   margin-bottom: 20px;
