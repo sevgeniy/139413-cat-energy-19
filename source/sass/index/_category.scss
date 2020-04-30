@@ -201,11 +201,3 @@ $link-color: #111111;
     opacity: 0.3;
   }
 }
-
-.category__description-br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-  }
-}
