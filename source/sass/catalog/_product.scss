@@ -140,13 +140,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 8px;
     padding-bottom: 7px;
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid $product-table-border-color;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 7px;
     padding-bottom: 8px;
-    border-bottom: 1px solid $grey;
   }
 }
 
