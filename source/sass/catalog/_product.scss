@@ -163,6 +163,7 @@
 
 .product__buy-btn {
   font-size: 16px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 76px);
