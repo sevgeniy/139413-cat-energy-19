@@ -98,7 +98,6 @@ gulp.task("server", function () {
     ui: false,
   });
 
-  console.log("server task");
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/*.html").on("change", gulp.series("html", server.reload));
