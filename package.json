@@ -23,7 +23,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp css",
     "start": "gulp start",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "html": "gulp html"
   },
   "browserslist": [
     "last 2 versions",
