@@ -1,4 +1,8 @@
-@import "base";
+// base
+@import "base/base";
+// mixins
+@import "mixins/add-side-paddings";
+@import "mixins/add-heading-line";
 // blocks
 @import "blocks/header";
 @import "blocks/text-input";
@@ -6,18 +10,17 @@
 @import "blocks/radio";
 @import "blocks/checkbox";
 @import "blocks/button";
-// mixins
-@import "mixins/add-side-paddings";
-@import "mixins/add-heading-line";
-// page blocks
-@import "logo";
-@import "copyright";
-@import "contacts";
-@import "page-footer";
-@import "social";
-@import "page-header";
-@import "site-list";
-@import "page-main";
+// common
+@import "common/contacts";
+@import "common/copyright";
+@import "common/logo";
+@import "common/main-nav";
+@import "common/page-footer";
+@import "common/page-main";
+@import "common/page-header";
+@import "common/site-list";
+@import "common/social";
+@import "common/visually-hidden";
 // index page
 @import "index/slogan";
 @import "index/categories";
@@ -25,12 +28,8 @@
 @import "index/advantages";
 @import "index/example";
 // catalog page
-@import "catalog/product";
 @import "catalog/products";
+@import "catalog/product";
 @import "catalog/extra";
 // form page
 @import "form/form";
-// visually-hidden
-@import "visually-hidden";
-// main-nav
-@import "main-nav";
