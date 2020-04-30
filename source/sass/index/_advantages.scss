@@ -46,16 +46,19 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: calc(50% - 60px);
+    width: calc(50% - 30px);
     min-height: 228px;
     padding-top: 114px;
     margin-bottom: 90px;
     padding-left: 0;
+    padding-right: 75px;
   }
 
   @media (min-width: $desktop-width) {
     width: 25%;
     margin-right: 80px;
+    margin-bottom: 0;
+    padding-right: 0;
   }
 
   &::before {
@@ -81,6 +84,10 @@
   &:nth-child(2n + 1) {
     @media (min-width: $tablet-width) {
       margin-bottom: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 

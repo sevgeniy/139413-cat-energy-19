@@ -1,5 +1,6 @@
 .form {
-  // TODO: how to use $tablet-padding + 40px; ???
+  overflow: hidden;
+
   @include add-side-paddings($tablet-padding-left: 70px);
 }
 
@@ -130,19 +131,19 @@
   height: 20px;
 }
 
-.form__email-icon-path,
-.form__tel-icon-path {
+.form__email-icon,
+.form__tel-icon {
   fill: $header-color;
 }
 
-.text-input:focus + .form__email-icon .form__email-icon-path,
-.text-input:focus + .form__tel-icon .form__tel-icon-path {
+.text-input:focus + .form__email-icon,
+.text-input:focus + .form__tel-icon {
   fill: $green;
 }
 
-.text-input--error + .form__email-icon .form__email-icon-path,
-.text-input--error + .form__tel-icon .form__tel-icon-path {
-  fill: $input-border-color-error;
+.text-input--error + .form__email-icon,
+.text-input--error + .form__tel-icon {
+  fill: $input-error-color;
 }
 
 .form__email-and-tel {
@@ -329,6 +330,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     margin-bottom: 73px;
+    justify-content: space-between;
   }
 }
 
@@ -349,7 +351,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    margin-right: 80px;
   }
 }
 
@@ -367,6 +368,7 @@
 
   @media (min-width: $desktop-width) {
     border: 1px solid $light-grey;
+    box-sizing: border-box;
   }
 
   &::before {

@@ -3,7 +3,7 @@
   border-right: $border;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
   }
@@ -38,52 +39,27 @@
   padding-bottom: 24px;
   text-align: center;
   border-bottom: $border;
+  background-image: url("../../img/icon-plus-mobile.svg");
+  background-size: 30px 30px;
+  background-position: center 26px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    margin-top: 141px;
     padding-top: 54px;
     padding-left: 38px;
     padding-right: 38px;
     background-color: $white;
+    background-image: url("../../img/icon-plus.svg");
+    background-size: 60px 60px;
+    background-position: center 54px;
     border: 1px solid #e6e6e6;
   }
 }
 
-.products__more-btn {
-  font-size: 0;
-  line-height: 0;
-  text-decoration: none;
-}
-
-.products__more-icon {
-  width: 30px;
-  height: 30px;
-  fill: #d3d3d3;
-
-  @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-.products__mobile-plus {
+.products__more-descr {
   display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.products__plus {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.products__more-label {
-  display: block;
-  margin-top: 20px;
+  margin-top: 54px;
   margin-bottom: 7px;
   font-family: $header-font-family;
   font-size: 16px;
@@ -95,18 +71,19 @@
     font-size: 20px;
     max-width: 150px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 110px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 43px;
+    margin-top: 110px;
   }
 }
 
-.products__all-label {
+.products__all {
   display: block;
-  font-size: 12px;
+  margin-top: 7px;
   margin-bottom: 20px;
+  font-size: 12px;
 
   @media (min-width: $tablet-width) {
     max-width: 170px;

@@ -5,12 +5,15 @@
 @import "blocks/label";
 @import "blocks/radio";
 @import "blocks/checkbox";
+@import "blocks/button";
 // mixins
 @import "mixins/add-side-paddings";
 @import "mixins/add-heading-line";
 // page blocks
+@import "logo";
+@import "copyright";
 @import "contacts";
-@import "footer";
+@import "page-footer";
 @import "social";
 @import "page-header";
 @import "site-list";

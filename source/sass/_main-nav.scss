@@ -1,5 +1,10 @@
 .main-nav {
   flex-grow: 1;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 
   &--closed {
     display: none;

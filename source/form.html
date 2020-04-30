@@ -10,22 +10,30 @@
       type="text/javascript"
     ></script>
     <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=633e05e9-02f6-4aa4-95df-a0aefd4e8ceb
-    &lang=ru_RU"
+      src="https://api-maps.yandex.ru/2.1/?apikey=633e05e9-02f6-4aa4-95df-a0aefd4e8ceb&lang=ru_RU"
       type="text/javascript"
     ></script>
+    <script src="js/svgxuse.min.js" defer></script>
   </head>
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="#" class="page-header__logo-link">
+        <a href="index.html" class="page-header__logo-container">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-            <img class="page-header__logo" src="img/logo-mobile.svg" alt="Логотип в хедере" width="191" height="38" />
+            <img
+              class="page-header__logo"
+              src="img/logo-mobile.svg"
+              alt="Логотип в хедере"
+              width="191"
+              height="38"
+            />
           </picture>
         </a>
-        <button class="js-toggle page-header__toggle page-header__toggle--closed page-header__toggle--no-js" href="#">
+        <button
+          class="js-toggle page-header__toggle page-header__toggle--closed page-header__toggle--no-js"
+        >
           <span class="visually-hidden">Закрыть меню</span>
           <svg class="page-header__close" width="18" height="18">
             <use xlink:href="img/sprite.svg#icon-close" />
@@ -41,15 +49,25 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
+            <li class="site-list__item">
+              <a
+                class="site-list__link site-list__link--active"
+                href="form.html"
+                >Подбор программы</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="header page-main__title page-main__title--form">Подбор программы</h1>
+      <h1 class="header page-main__title page-main__title--form">
+        Подбор программы
+      </h1>
       <form action="https://echo.htmlacademy.ru" class="form">
         <h2 class="header form__title">
           Заполните анкету и мы подберём<br />
@@ -58,93 +76,130 @@
         <section class="form__section form__cats-data">
           <section class="form__cat-info">
             <div class="input-container">
-              <label class="label form__label label--required" for="cat-name">Имя:</label>
-              <input class="text-input" id="cat-name" name="cat-name" type="text" placeholder="БАРСИК" />
+              <label class="label form__label label--required" for="cat-name"
+                >Имя:</label
+              >
+              <input
+                class="text-input"
+                id="cat-name"
+                name="cat-name"
+                type="text"
+                placeholder="БАРСИК"
+                required
+                autocomplete="off"
+              />
             </div>
             <div class="input-container">
-              <label class="label form__label label--required" for="weight">Вес (кг):</label>
-              <input class="text-input" id="weight" name="weight" type="text" placeholder="7" />
+              <label class="label form__label label--required" for="weight"
+                >Вес (кг):</label
+              >
+              <input
+                class="text-input"
+                id="weight"
+                name="weight"
+                type="text"
+                placeholder="7"
+                required
+                autocomplete="off"
+              />
             </div>
             <div class="input-container">
               <label class="label form__label" for="age">Возраст (лет):</label>
-              <input class="text-input" id="age" name="age" type="text" placeholder="7" />
+              <input
+                class="text-input"
+                id="age"
+                name="age"
+                type="text"
+                placeholder="7"
+                autocomplete="off"
+              />
             </div>
           </section>
           <ul class="form__program-info">
             <li class="input-container">
-              <input class="radio visually-hidden" type="radio" name="program" id="diet" />
-              <label class="label form__label label--radio" for="diet">Похудение</label>
+              <input
+                class="radio visually-hidden"
+                type="radio"
+                name="program"
+                id="diet"
+              />
+              <label class="label form__label label--radio" for="diet"
+                >Похудение</label
+              >
             </li>
             <li class="input-container">
-              <input class="radio visually-hidden" type="radio" name="program" id="muscles" />
-              <label class="label form__label label--radio" for="muscles">Набор массы</label>
+              <input
+                class="radio visually-hidden"
+                type="radio"
+                name="program"
+                id="muscles"
+              />
+              <label class="label form__label label--radio" for="muscles"
+                >Набор массы</label
+              >
             </li>
             <li class="input-container">
-              <input class="radio visually-hidden" type="radio" name="program" id="advice" />
-              <label class="label form__label label--radio" for="advice">Не знаю (нужен ваш совет)</label>
+              <input
+                class="radio visually-hidden"
+                type="radio"
+                name="program"
+                id="advice"
+              />
+              <label class="label form__label label--radio" for="advice"
+                >Не знаю (нужен ваш совет)</label
+              >
             </li>
           </ul>
         </section>
         <div class="form__legend-container">
-          <legend class="header form__fieldset-legend form__cats-data-legend">
+          <div class="header form__fieldset-legend form__cats-data-legend">
             Контактные данные (владельца кота)
-          </legend>
+          </div>
         </div>
         <section class="form__section">
           <div class="form__email-and-tel">
             <div class="input-container input-container--email">
-              <label class="label form__label--email label--required" for="phone">E-Mail:</label>
-              <input class="text-input" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" />
-              <svg
-                class="form__email-icon"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 17 13"
-                style="enable-background: new 0 0 17 13;"
-                xml:space="preserve"
+              <label
+                class="label form__label--email label--required"
+                for="phone"
+                >E-Mail:</label
               >
-                <path
-                  class="form__email-icon-path"
-                  d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"
-                />
+              <input
+                class="text-input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="kuklachev@gmail.com"
+                required
+                autocomplete="off"
+              />
+              <svg class="form__email-icon" viewBox="0 0 17 13">
+                <use xlink:href="img/sprite.svg#icon-mail" />
               </svg>
             </div>
             <div class="input-container input-container--tel">
-              <label class="label form__label--phone label--required" for="phone">Телефон:</label>
-              <input class="text-input" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" />
-              <svg
-                class="form__tel-icon"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 20 20"
-                style="enable-background: new 0 0 20 20;"
-                xml:space="preserve"
+              <label
+                class="label form__label--phone label--required"
+                for="phone"
+                >Телефон:</label
               >
-                <path
-                  class="form__tel-icon-path"
-                  d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"
-                />
-                <path
-                  class="form__tel-icon-path"
-                  d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-                c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-                C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-                C7.8,20,8.1,19.7,8.1,19.4z"
-                />
+              <input
+                class="text-input"
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="8 (960) 900-60-90"
+                required
+                autocomplete="off"
+              />
+              <svg class="form__tel-icon" viewBox="0 0 20 20">
+                <use xlink:href="img/sprite.svg#icon-phone" />
               </svg>
             </div>
           </div>
         </section>
         <div class="form__legend-container">
-          <legend class="header form__fieldset-legend">Комментарий</legend>
+          <div class="header form__fieldset-legend">Комментарий</div>
         </div>
         <section class="form__section form__comments-section">
           <textarea
@@ -154,86 +209,155 @@
             cols="30"
             rows="7"
             placeholder="Расскажите обо всех повадках кота"
+            autocomplete="off"
           ></textarea>
         </section>
         <div class="form__legend-container">
-          <legend class="header form__fieldset-legend">Дополнительно</legend>
+          <div class="header form__fieldset-legend">Дополнительно</div>
         </div>
         <section class="form__section form__additional-section">
           <ul class="form__additional-products">
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="sugar-replacer" />
-              <label class="label label--checkbox" for="sugar-replacer">Сахарозаменитель</label>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="sugar-replacer"
+              />
+              <label class="label label--checkbox" for="sugar-replacer"
+                >Сахарозаменитель</label
+              >
             </li>
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="water" />
-              <label class="label label--checkbox" for="water">Питьевая вода</label>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="water"
+              />
+              <label class="label label--checkbox" for="water"
+                >Питьевая вода</label
+              >
             </li>
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="milk" />
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="milk"
+              />
               <label class="label label--checkbox" for="milk">Молоко</label>
             </li>
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="vitamins" />
-              <label class="label label--checkbox" for="vitamins">Витамины</label>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="vitamins"
+              />
+              <label class="label label--checkbox" for="vitamins"
+                >Витамины</label
+              >
             </li>
           </ul>
         </section>
         <div class="form__submit-and-subtitles">
-          <button class="btn form__submit-btn" type="submit">Отправить заявку</button>
+          <button class="btn form__submit-btn" type="submit">
+            Отправить заявку
+          </button>
           <p class="form__subtitles">* &mdash; Обязательные поля</p>
         </div>
       </form>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="header contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="header contacts__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
           <p class="contacts__address">
             ул. Большая<br />
             Конюшенная, д. 19/8<br />
-            Санкт-Петербург
+            <span class="contacts__address-city">
+              Санкт-Петербург
+            </span>
           </p>
         </div>
         <noscript>
           <div class="contacts__map-container">
-            <div class="contacts__map-pin">Место на карте</div>
-            <picture>
-              <source
-                type="image/webp"
-                media="(min-width: 1440px)"
-                srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x"
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x"
-              />
-              <source type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x" />
-              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" />
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" />
-              <img
-                class="contacts__map"
-                src="img/bg-map-mobile@1x.png"
-                srcset="img/bg-map-mobile@2x.png 2x"
-                alt="Карта"
-                width="320"
-                height="362"
-              />
-            </picture>
+            <div class="contacts__map">
+              <div class="contacts__map-pin">Место на карте</div>
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/bg-map-desktop@1x.webp 1x,
+                    img/bg-map-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/bg-map-tablet@1x.webp 1x,
+                    img/bg-map-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/bg-map-mobile@1x.webp 1x,
+                    img/bg-map-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/bg-map-desktop@1x.png 1x,
+                    img/bg-map-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/bg-map-tablet@1x.png 1x,
+                    img/bg-map-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="contacts__map-image"
+                  src="img/bg-map-mobile@1x.png"
+                  srcset="img/bg-map-mobile@2x.png 2x"
+                  alt="Карта"
+                  width="320"
+                  height="362"
+                />
+              </picture>
+            </div>
           </div>
         </noscript>
-        <div id="map" class="contacts__yandex-map-container contacts__yandex-map-container--no-js"></div>
+        <div
+          id="map"
+          class="contacts__yandex-map contacts__yandex-map--no-js"
+        ></div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <svg class="page-footer__cat-energy" width="128" height="24">
-          <use class="page-footer__logo-group" xlink:href="img/sprite.svg#icon-logo-footer" />
-        </svg>
+        <a href="index.html">
+          <svg class="page-footer__cat-energy" width="128" height="24">
+            <use
+              class="page-footer__logo-group"
+              xlink:href="img/sprite.svg#icon-logo-footer"
+            />
+          </svg>
+        </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="https://vk.com/htmlacademy" class="social__link social__link--vk"
+            <a
+              href="https://vk.com/htmlacademy"
+              class="social__link social__link--vk"
               >Мы в ВКонтаке
               <svg class="social__vk">
                 <use class="social__logo" xlink:href="img/sprite.svg#icon-vk" />
@@ -241,15 +365,22 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="https://www.instagram.com/htmlacademy/" class="social__link social__link--insta"
+            <a
+              href="https://www.instagram.com/htmlacademy/"
+              class="social__link social__link--insta"
               >Мы в Инстаграме
               <svg class="social__insta">
-                <use class="social__logo" xlink:href="img/sprite.svg#icon-insta" />
+                <use
+                  class="social__logo"
+                  xlink:href="img/sprite.svg#icon-insta"
+                />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb"
+            <a
+              href="https://www.facebook.com/htmlacademy"
+              class="social__link social__link--fb"
               >Мы в Фейсбуке
               <svg class="social__fb">
                 <use class="social__logo" xlink:href="img/sprite.svg#icon-fb" />
@@ -259,16 +390,27 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">HTML Academy</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link"
-          >HTML Academy
-          <svg class="copyright__logo" width="27" height="34">
-            <use class="copyright__logo-path" xlink:href="img/sprite.svg#icon-htmlacademy" />
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="copyright__link"
+        >
+          <b class="copyright__text">HTML Academy</b>
+        </a>
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="copyright__link"
+        >
+          <svg class="copyright__logo">
+            <use
+              class="copyright__logo-path"
+              xlink:href="img/sprite.svg#icon-htmlacademy"
+            />
           </svg>
         </a>
       </div>
     </footer>
     <script src="js/map.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

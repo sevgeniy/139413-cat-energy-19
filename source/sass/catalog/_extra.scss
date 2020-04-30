@@ -1,5 +1,6 @@
 .extra {
   position: relative;
+  overflow: hidden;
 
   @include add-side-paddings();
 
@@ -83,11 +84,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding-top: 27px;
+    padding-top: 22px;
     padding-right: 37px;
     padding-bottom: 28px;
     padding-left: 37px;
     background-color: $white;
+    background-image: none;
     border: 1px solid #e6e6e6;
     border-bottom: none;
   }
@@ -102,6 +104,10 @@
     padding-left: 0;
     border-left: none;
     border-right: none;
+  }
+
+  &:first-child {
+    border-top: 1px solid $light-grey;
   }
 
   &:nth-child(2n + 1) {
@@ -141,11 +147,30 @@
     font-size: 16px;
     line-height: 16px;
   }
+}
 
-  // TODO: fix this cascad 🚨
-  td {
+.extra__property,
+.extra__value {
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.extra__property {
+  @media (min-width: $desktop-width) {
+    min-width: 240px;
+  }
+}
+
+.extra__value {
+  &--price {
     @media (min-width: $tablet-width) {
-      border: none;
+      padding-left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 40px;
+      padding-left: 0;
     }
   }
 }
@@ -171,7 +196,7 @@
   padding-bottom: 48px;
   background-color: #68b738;
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 55px 60px, 280px auto;
+  background-size: 55px 60px, cover;
   background-position: center 65px, center top;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
@@ -185,7 +210,7 @@
     padding-bottom: 70px;
     padding-left: 298px;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
-    background-size: 55px 60px, 708px auto;
+    background-size: 55px 60px, cover;
     background-position: 91px 65px, center top;
     text-align: left;
 
@@ -202,7 +227,7 @@
     padding-right: 37px;
     box-sizing: border-box;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
-    background-size: 55px 60px, 245px auto;
+    background-size: 55px 60px, cover;
     background-position: center 65px, center top;
     text-align: center;
 

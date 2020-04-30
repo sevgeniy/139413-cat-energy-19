@@ -174,22 +174,38 @@ $link-color: #111111;
     line-height: 20px;
   }
 
-  &:active {
-    color: rgba(17, 17, 17, 0.3);
+  &::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: 12px;
+    top: -1px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
 
-    .category__link-arrow-icon {
-      opacity: 0.3;
+    @media (min-width: $tablet-width) {
+      left: 24px;
+      top: -3px;
     }
+  }
+
+  &:active::after,
+  &:hover::after {
+    width: 34px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.category__link-arrow-icon {
-  margin-left: 8px;
-  fill: $header-color;
+.category__description-br {
+  display: none;
 
   @media (min-width: $tablet-width) {
-    margin-left: 20px;
-    margin-bottom: 4px;
-    display: inline-block;
+    display: inline;
   }
 }
