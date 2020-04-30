@@ -10,8 +10,7 @@
       type="text/javascript"
     ></script>
     <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=633e05e9-02f6-4aa4-95df-a0aefd4e8ceb
-    &lang=ru_RU"
+      src="https://api-maps.yandex.ru/2.1/?apikey=633e05e9-02f6-4aa4-95df-a0aefd4e8ceb&lang=ru_RU"
       type="text/javascript"
     ></script>
     <script src="js/svgxuse.min.js" defer></script>
@@ -34,7 +33,6 @@
         </a>
         <button
           class="js-toggle page-header__toggle page-header__toggle--closed page-header__toggle--no-js"
-          href="#"
         >
           <span class="visually-hidden">Закрыть меню</span>
           <svg class="page-header__close" width="18" height="18">
@@ -51,10 +49,14 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="form.html"
+              <a
+                class="site-list__link site-list__link--active"
+                href="form.html"
                 >Подбор программы</a
               >
             </li>
@@ -63,7 +65,9 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="header page-main__title page-main__title--form">Подбор программы</h1>
+      <h1 class="header page-main__title page-main__title--form">
+        Подбор программы
+      </h1>
       <form action="https://echo.htmlacademy.ru" class="form">
         <h2 class="header form__title">
           Заполните анкету и мы подберём<br />
@@ -72,7 +76,9 @@
         <section class="form__section form__cats-data">
           <section class="form__cat-info">
             <div class="input-container">
-              <label class="label form__label label--required" for="cat-name">Имя:</label>
+              <label class="label form__label label--required" for="cat-name"
+                >Имя:</label
+              >
               <input
                 class="text-input"
                 id="cat-name"
@@ -84,7 +90,9 @@
               />
             </div>
             <div class="input-container">
-              <label class="label form__label label--required" for="weight">Вес (кг):</label>
+              <label class="label form__label label--required" for="weight"
+                >Вес (кг):</label
+              >
               <input
                 class="text-input"
                 id="weight"
@@ -109,15 +117,34 @@
           </section>
           <ul class="form__program-info">
             <li class="input-container">
-              <input class="radio visually-hidden" type="radio" name="program" id="diet" />
-              <label class="label form__label label--radio" for="diet">Похудение</label>
+              <input
+                class="radio visually-hidden"
+                type="radio"
+                name="program"
+                id="diet"
+              />
+              <label class="label form__label label--radio" for="diet"
+                >Похудение</label
+              >
             </li>
             <li class="input-container">
-              <input class="radio visually-hidden" type="radio" name="program" id="muscles" />
-              <label class="label form__label label--radio" for="muscles">Набор массы</label>
+              <input
+                class="radio visually-hidden"
+                type="radio"
+                name="program"
+                id="muscles"
+              />
+              <label class="label form__label label--radio" for="muscles"
+                >Набор массы</label
+              >
             </li>
             <li class="input-container">
-              <input class="radio visually-hidden" type="radio" name="program" id="advice" />
+              <input
+                class="radio visually-hidden"
+                type="radio"
+                name="program"
+                id="advice"
+              />
               <label class="label form__label label--radio" for="advice"
                 >Не знаю (нужен ваш совет)</label
               >
@@ -125,14 +152,18 @@
           </ul>
         </section>
         <div class="form__legend-container">
-          <legend class="header form__fieldset-legend form__cats-data-legend">
+          <div class="header form__fieldset-legend form__cats-data-legend">
             Контактные данные (владельца кота)
-          </legend>
+          </div>
         </div>
         <section class="form__section">
           <div class="form__email-and-tel">
             <div class="input-container input-container--email">
-              <label class="label form__label--email label--required" for="phone">E-Mail:</label>
+              <label
+                class="label form__label--email label--required"
+                for="phone"
+                >E-Mail:</label
+              >
               <input
                 class="text-input"
                 id="email"
@@ -147,7 +178,11 @@
               </svg>
             </div>
             <div class="input-container input-container--tel">
-              <label class="label form__label--phone label--required" for="phone">Телефон:</label>
+              <label
+                class="label form__label--phone label--required"
+                for="phone"
+                >Телефон:</label
+              >
               <input
                 class="text-input"
                 id="phone"
@@ -164,7 +199,7 @@
           </div>
         </section>
         <div class="form__legend-container">
-          <legend class="header form__fieldset-legend">Комментарий</legend>
+          <div class="header form__fieldset-legend">Комментарий</div>
         </div>
         <section class="form__section form__comments-section">
           <textarea
@@ -178,7 +213,7 @@
           ></textarea>
         </section>
         <div class="form__legend-container">
-          <legend class="header form__fieldset-legend">Дополнительно</legend>
+          <div class="header form__fieldset-legend">Дополнительно</div>
         </div>
         <section class="form__section form__additional-section">
           <ul class="form__additional-products">
@@ -189,30 +224,55 @@
                 name="extra"
                 id="sugar-replacer"
               />
-              <label class="label label--checkbox" for="sugar-replacer">Сахарозаменитель</label>
+              <label class="label label--checkbox" for="sugar-replacer"
+                >Сахарозаменитель</label
+              >
             </li>
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="water" />
-              <label class="label label--checkbox" for="water">Питьевая вода</label>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="water"
+              />
+              <label class="label label--checkbox" for="water"
+                >Питьевая вода</label
+              >
             </li>
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="milk" />
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="milk"
+              />
               <label class="label label--checkbox" for="milk">Молоко</label>
             </li>
             <li class="input-container form__additional-product">
-              <input class="checkbox visually-hidden" type="checkbox" name="extra" id="vitamins" />
-              <label class="label label--checkbox" for="vitamins">Витамины</label>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="extra"
+                id="vitamins"
+              />
+              <label class="label label--checkbox" for="vitamins"
+                >Витамины</label
+              >
             </li>
           </ul>
         </section>
         <div class="form__submit-and-subtitles">
-          <button class="btn form__submit-btn" type="submit">Отправить заявку</button>
+          <button class="btn form__submit-btn" type="submit">
+            Отправить заявку
+          </button>
           <p class="form__subtitles">* &mdash; Обязательные поля</p>
         </div>
       </form>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="header contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="header contacts__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
           <p class="contacts__address">
             ул. Большая<br />
             Конюшенная, д. 19/8<br />
@@ -229,24 +289,39 @@
                 <source
                   type="image/webp"
                   media="(min-width: 1440px)"
-                  srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x"
+                  srcset="
+                    img/bg-map-desktop@1x.webp 1x,
+                    img/bg-map-desktop@2x.webp 2x
+                  "
                 />
                 <source
                   type="image/webp"
                   media="(min-width: 768px)"
-                  srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x"
+                  srcset="
+                    img/bg-map-tablet@1x.webp 1x,
+                    img/bg-map-tablet@2x.webp 2x
+                  "
                 />
                 <source
                   type="image/webp"
-                  srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x"
+                  srcset="
+                    img/bg-map-mobile@1x.webp 1x,
+                    img/bg-map-mobile@2x.webp 2x
+                  "
                 />
                 <source
                   media="(min-width: 1440px)"
-                  srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x"
+                  srcset="
+                    img/bg-map-desktop@1x.png 1x,
+                    img/bg-map-desktop@2x.png 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x"
+                  srcset="
+                    img/bg-map-tablet@1x.png 1x,
+                    img/bg-map-tablet@2x.png 2x
+                  "
                 />
                 <img
                   class="contacts__map-image"
@@ -260,21 +335,29 @@
             </div>
           </div>
         </noscript>
-        <div id="map" class="contacts__yandex-map contacts__yandex-map--no-js"></div>
+        <div
+          id="map"
+          class="contacts__yandex-map contacts__yandex-map--no-js"
+        ></div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
         <a href="index.html">
           <svg class="page-footer__cat-energy" width="128" height="24">
-            <use class="page-footer__logo-group" xlink:href="img/sprite.svg#icon-logo-footer" />
+            <use
+              class="page-footer__logo-group"
+              xlink:href="img/sprite.svg#icon-logo-footer"
+            />
           </svg>
         </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="https://vk.com/htmlacademy" class="social__link social__link--vk"
+            <a
+              href="https://vk.com/htmlacademy"
+              class="social__link social__link--vk"
               >Мы в ВКонтаке
               <svg class="social__vk">
                 <use class="social__logo" xlink:href="img/sprite.svg#icon-vk" />
@@ -287,12 +370,17 @@
               class="social__link social__link--insta"
               >Мы в Инстаграме
               <svg class="social__insta">
-                <use class="social__logo" xlink:href="img/sprite.svg#icon-insta" />
+                <use
+                  class="social__logo"
+                  xlink:href="img/sprite.svg#icon-insta"
+                />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb"
+            <a
+              href="https://www.facebook.com/htmlacademy"
+              class="social__link social__link--fb"
               >Мы в Фейсбуке
               <svg class="social__fb">
                 <use class="social__logo" xlink:href="img/sprite.svg#icon-fb" />
@@ -302,12 +390,21 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="copyright__link"
+        >
           <b class="copyright__text">HTML Academy</b>
         </a>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="copyright__link"
+        >
           <svg class="copyright__logo">
-            <use class="copyright__logo-path" xlink:href="img/sprite.svg#icon-htmlacademy" />
+            <use
+              class="copyright__logo-path"
+              xlink:href="img/sprite.svg#icon-htmlacademy"
+            />
           </svg>
         </a>
       </div>
