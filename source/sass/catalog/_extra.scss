@@ -186,6 +186,13 @@
 }
 
 .extra__content {
+  border-left: none;
+  border-right: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -195,27 +202,31 @@
   padding-top: 187px;
   padding-bottom: 48px;
   background-color: #68b738;
-  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/icon-gift.svg"),
+    url("../img/gift-photo-mobile@1x.jpg");
   background-size: 55px 60px, cover;
   background-position: center 65px, center top;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@2x.jpg");
+    background-image: url("../img/icon-gift.svg"),
+      url("../img/gift-photo-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 70px;
     padding-bottom: 70px;
     padding-left: 298px;
-    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/icon-gift.svg"),
+      url("../img/gift-photo-tablet@1x.jpg");
     background-size: 55px 60px, cover;
     background-position: 91px 65px, center top;
     text-align: left;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@2x.jpg");
+      background-image: url("../img/icon-gift.svg"),
+        url("../img/gift-photo-tablet@2x.jpg");
     }
   }
 
@@ -226,13 +237,15 @@
     padding-left: 37px;
     padding-right: 37px;
     box-sizing: border-box;
-    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/icon-gift.svg"),
+      url("../img/gift-photo-desktop@1x.jpg");
     background-size: 55px 60px, cover;
     background-position: center 65px, center top;
     text-align: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
+      background-image: url("../img/icon-gift.svg"),
+        url("../img/gift-photo-desktop@2x.jpg");
     }
   }
 }
@@ -252,6 +265,7 @@
 .extra__buy-btn {
   width: 100%;
   font-size: 16px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
