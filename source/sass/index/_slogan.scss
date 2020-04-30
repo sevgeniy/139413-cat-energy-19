@@ -8,7 +8,7 @@
     linear-gradient(to bottom, $cat-green 305px, $white 305px);
   background-size: 280px auto, 320px auto, 100% auto;
   background-position: center 168px, center top, center;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   background-color: $white;
   text-align: center;
 
@@ -41,14 +41,17 @@
     padding-left: $desktop-padding + 83px;
     background-image: url("../img/index-can-desktop@1x.png"),
       url("../img/index-background-desktop@1x.jpg"),
-      linear-gradient(to right, $white calc(50% + 40px), $cat-green calc(50% + 40px));
-    background-size: 552px auto, 680px auto, 100% auto;
-    background-position: calc(50% + 116px) 11px, right -132px, center;
+      linear-gradient(to left, $white, $white),
+      linear-gradient(to left, $cat-green 50%, $white 50%);
+    background-size: 552px auto, 680px auto, 80px 100%, 100% auto;
+    background-position: calc(50% + 116px) 11px, right -132px, 50%, center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png"),
         url("../img/index-background-desktop@2x.jpg"),
-        linear-gradient(to right, $white calc(50% + 40px), $cat-green calc(50% + 40px));
+        linear-gradient(to left, $white, $white),
+        linear-gradient(to left, $cat-green 50%, $white 50%);
     }
   }
 }
